@@ -11,21 +11,26 @@ import { RiWhatsappFill } from 'react-icons/ri';
 import { FaTiktok } from 'react-icons/fa';
 import { PiCopyright } from 'react-icons/pi';
 import lifeChat from '../../assets/images/lifechat-konsult.svg';
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+	const { t, i18n } = useTranslation();
+
 	return (
 		<div>
 			<footer className='bg-white py-12 relative'>
 				<div className='flex justify-around md:flex-row max-sm:flex-col sm:flex-col max-sm:px-5 sm:px-5 '>
 					<div className='flex items-center justify-between md:flex-col max-sm:flex-row sm:flex-row'>
-						<h3 className='md:block max-sm:hidden sm:hidden'>Əlaqə</h3>
+						<h3 className='md:block max-sm:hidden sm:hidden'>
+							{t('contactFirst')}
+						</h3>
 						<ul className='flex justify-center md:flex-col max-sm:flex-row sm:flex-row'>
 							<Link
 								to={'tel:*6060'}
 								className='text-[#17a539] font-[700] text-[14px]'>
 								*6060
 							</Link>
-							<Link to={'/stores'}>Biz xəritədə</Link>
+							<Link to={'/stores'}>{t('map')}</Link>
 						</ul>
 						<div className='flex lg:gap-6 max-sm:gap-3 sm:gap-3'>
 							<RiVisaLine size={35} /> <RiMastercardFill size={32} />
@@ -34,39 +39,38 @@ function Footer() {
 					<div>
 						<h3 className='max-sm:my-4 sm:my-4 md:mt-0 md:mb-7'>Kontakt</h3>
 						<ul className='text-[#777] grid md:grid-cols-1 max-sm:grid-cols-2 sm:grid-cols-2 gap-2'>
-							<Link to={'/about-company'}>Şirkət haqqında</Link>
-							<Link>Karyera</Link>
-							<Link>"Qarabağ" proqramı</Link>
-							<Link>Kontakt Video</Link>
+							<Link to={'/about-company'}>{t('aboutCompany')}</Link>
+							<Link>{t('career')}</Link>
+							<Link>{t('qarabagProgram')}</Link>
+							<Link>{t('contactVideo')}</Link>
 						</ul>
 					</div>
 					<div>
-						<h3 className='max-sm:my-4 sm:my-4 md:mt-0 md:mb-7'>Məlumat</h3>
+						<h3 className='max-sm:my-4 sm:my-4 md:mt-0 md:mb-7'>{t('info')}</h3>
 						<ul className='text-[#777] grid md:grid-cols-1 max-sm:grid-cols-2 sm:grid-cols-2 gap-2'>
-							<Link>Konfidensiallıq siyasəti</Link>
-							<Link>Qiymət siyasəti</Link>
-							<Link>Şikayətlərin idarəolunması siyasəti</Link>
-							<Link>Saytın istifadə şərtləri</Link>
-							<Link to='/guarantee-best-price'>Ən yaxşı qiymətə zəmanət!</Link>
-							<Link to='/corporate'>Korporativ satışlar</Link>
+							<Link>{t('privacyPolicy')}</Link>
+							<Link>{t('pricingPolicy')}</Link>
+							<Link>{t('complaintManagementPolicy')}</Link>
+							<Link>{t('termsOfUse')}</Link>
+							<Link to='/guarantee-best-price'>{t('bestPriceGuarantee')}</Link>
 						</ul>
 					</div>
 					<div>
 						<h3 className='max-sm:my-4 sm:my-4 md:mt-0 md:mb-7'>
-							Müştərilər üçün
+							{t('forCustomers')}
 						</h3>
 						<ul className='text-[#777] grid md:grid-cols-1 max-sm:grid-cols-2 sm:grid-cols-2 gap-2'>
-							<Link to='/trade-in'>Trade-in</Link>
-							<Link to='/delivery-payment'>Çatdırılma və ödəmə</Link>
-							<Link>Hissə-hissə ödəniş şərtləri</Link>
-							<Link>Geri qaytarma siyasəti</Link>
-							<Link>Ultra Qızıl Zəmanət</Link>
-							<Link>Aylıq ödənişlərin həyata keçirilməsi</Link>
+							<Link to='/trade-in'>{t('tradeIn')}</Link>
+							<Link to='/delivery-payment'>{t('deliveryAndPayment')}</Link>
+							<Link>{t('installmentPaymentTerms')}</Link>
+							<Link>{t('returnPolicy')}</Link>
+							<Link>{t('ultraGoldGuarantee')}</Link>
+							<Link>{t('monthlyPaymentsProcessing')}</Link>
 						</ul>
 					</div>
 					<div>
 						<h3 className='max-sm:my-4 sm:my-4 md:mt-0 md:mb-7'>
-							Bizimlə qalın:
+							{t('stayUs')}
 						</h3>
 						<ul className='flex items-center flex-row lg:gap-6 max-sm:gap-3 sm:gap-3 '>
 							<a href='https://www.facebook.com/Kontakthome/' target='blank'>

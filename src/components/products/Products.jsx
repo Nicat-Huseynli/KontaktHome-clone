@@ -16,8 +16,11 @@ import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import LoginSidebar from '../login-sidebar/LoginSidebar';
 import { IoFilterSharp } from 'react-icons/io5';
+import { useTranslation } from 'react-i18next';
 
 function Products() {
+	const { t, i18n } = useTranslation();
+
 	const navigateCategory = useNavigate();
 
 	const [data, setData] = useState([]);
@@ -37,8 +40,8 @@ function Products() {
 	useEffect(() => {
 		axios.get(`http://localhost:3000/products`).then((response) => {
 			setData(response.data);
-			setLoading(false)
-			
+			setLoading(false);
+
 			const types = [
 				...new Set(response.data.map((item) => item.characteristics.type)),
 			];
@@ -176,10 +179,10 @@ function Products() {
 							className='p-2 outline-none bg-[#F3F3F3] rounded-lg md:text-[14px] sm:text-[12px] max-sm:text-[12px] text-[#323232] font-[500]'
 							onChange={(e) => setSelect(e.target.value)}
 							id=''>
-							<option value=''>Sıralama</option>
-							<option value='1'>Məhsul adı</option>
-							<option value='2'>Ucuzdan bahaya</option>
-							<option value='3'>Bahadan ucuza</option>
+							<option value=''>{t('sort')}</option>
+							<option value='1'>{t('name')}</option>
+							<option value='2'>{t('cheap')}</option>
+							<option value='3'>{t('expensive')}</option>
 						</select>
 					</div>
 				</div>
@@ -195,7 +198,7 @@ function Products() {
 									<button
 										onClick={openFilter}
 										className='bg-green-600 text-white p-2 rounded-md'>
-										Təsdiq et
+										{t('confirm')}
 									</button>
 									<VscSettings size={22} />
 								</div>
@@ -205,7 +208,7 @@ function Products() {
 								<div
 									onClick={triggerPrice}
 									className='flex justify-between cursor-pointer'>
-									<h4>Qiymət</h4>
+									<h4>{t('price')}</h4>
 
 									{openPrice ? <FaMinus /> : <FaPlus />}
 								</div>
@@ -257,7 +260,7 @@ function Products() {
 								<div
 									onClick={triggerManufacturer}
 									className='flex justify-between cursor-pointer'>
-									<h4>İstehsalçı</h4>
+									<h4>{t('manufacturer')}</h4>
 
 									{openManufacturer ? <FaMinus /> : <FaPlus />}
 								</div>
@@ -294,7 +297,7 @@ function Products() {
 								<div
 									onClick={triggerCategory}
 									className='flex justify-between cursor-pointer'>
-									<h4>Kateqoriya</h4>
+									<h4>{t('category')}</h4>
 									{openCategory ? <FaMinus /> : <FaPlus />}
 								</div>
 
@@ -323,13 +326,13 @@ function Products() {
 											<p
 												className='cursor-pointer text-[#323232]'
 												onClick={decreaseTypeCount}>
-												Daha az
+												{t('')}
 											</p>
 										) : (
 											<p
 												className='cursor-pointer text-[#323232]'
 												onClick={increaseTypeCount}>
-												Hamısını göstər
+												{t('displayAll')}
 											</p>
 										)}
 									</div>
@@ -351,7 +354,7 @@ function Products() {
 
 					<div className='w-[20%] bg-white rounded-lg mt-6 xl:block sm:hidden max-sm:hidden'>
 						<div className='header flex items-center justify-between p-4'>
-							<h3>Filtr</h3>
+							<h3>{t('filter')}</h3>
 							<VscSettings size={22} />
 						</div>
 
@@ -359,7 +362,7 @@ function Products() {
 							<div
 								onClick={triggerPrice}
 								className='flex justify-between cursor-pointer'>
-								<h4>Qiymət</h4>
+								<h4>{t('price')}</h4>
 
 								{openPrice ? <FaMinus /> : <FaPlus />}
 							</div>
@@ -411,7 +414,7 @@ function Products() {
 							<div
 								onClick={triggerManufacturer}
 								className='flex justify-between cursor-pointer'>
-								<h4>İstehsalçı</h4>
+								<h4>{t('manufacturer')}</h4>
 
 								{openManufacturer ? <FaMinus /> : <FaPlus />}
 							</div>
@@ -448,7 +451,7 @@ function Products() {
 							<div
 								onClick={triggerCategory}
 								className='flex justify-between cursor-pointer'>
-								<h4>Kateqoriya</h4>
+								<h4>{t('category')}</h4>
 								{openCategory ? <FaMinus /> : <FaPlus />}
 							</div>
 
@@ -477,13 +480,13 @@ function Products() {
 										<p
 											className='cursor-pointer text-[#323232]'
 											onClick={decreaseTypeCount}>
-											Daha az
+											{t('displayLess')}
 										</p>
 									) : (
 										<p
 											className='cursor-pointer text-[#323232]'
 											onClick={increaseTypeCount}>
-											Hamısını göstər
+											{t('displayAll')}
 										</p>
 									)}
 								</div>
@@ -575,7 +578,7 @@ function Products() {
 																			: product.price + ' ₼'}
 																	</h3>
 																	<p className='font-[600] text-[12px] text-[#323232]'>
-																		0% 12 ay
+																		0% 12 {t('month')}
 																	</p>
 																</div>
 															</Link>
@@ -609,7 +612,7 @@ function Products() {
 																				fil: 'white',
 																			}}
 																		/>{' '}
-																		Səbətə at
+																		{t('addBasket')}
 																	</button>
 																</div>
 															)}
@@ -674,7 +677,7 @@ function Products() {
 																		: product.price + ' ₼'}
 																</h3>
 																<p className='font-[600] text-[12px] text-[#323232]'>
-																	0% 12 ay
+																	0% 12 {t('month')}
 																</p>
 															</div>
 														</Link>
@@ -705,7 +708,7 @@ function Products() {
 																		size={20}
 																		style={{ cursor: 'pointer', fil: 'white' }}
 																	/>{' '}
-																	Səbətə at
+																	{t('addBasket')}
 																</button>
 															</div>
 														)}

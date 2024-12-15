@@ -7,12 +7,80 @@
     "catalog": "Catalog",
     "searching": "Searching...",
 
-    
+
     "//secondComment": "Aside Daily Offer",
     "dailyOffer": "Daily Offer",
     "hour": "hour",
     "minute": "minute",
     "second": "second",
-    "addBasket": "Add Basket"
+    "addBasket": "Add to Cart",
+
+    "month": "months",
+
+    "//thirdComment": "Info",
+    "clearance": "Clearance at the door",
+    "clearanceInfo": "Possibility to pay in cash, in installments or by card",
+    "warrantyOption": "Warranty option",
+    "warrantyOptionInfo": "Manufacturer's warranty, gold warranty, warranty plus",
+    "delivery": "Free delivery",
+    "deliveryInfo": "Free delivery on orders over 49.99AZN",
+    "guarantee": "Best price guarantee!",
+    "guaranteeInfo":"Find it cheaper, get 120% of the price difference back",
+
+    "salesLeaders": "Sales leaders",
+
+    "//fourthComment": "Telefoniya",
+    "bestSelling": "The best selling products",
+
+    "//fifthComment": "Product Info",
+    "buyOneClick": "Buy one clik",
+    "calculator":"Installment purchase calculator",
+    "calculatorInfo": "Terms apply to first time discounted price",
+    "commissionInfo":"A commission may be added when processing the order.",
+    "buyInstallments":"Buy in installments",
+    "features":"Features",
+    
+    "//sixthComment": "Products",
+    "filter":"Filter",
+    "price":"Price",
+    "manufacturer": "Manufacturer",
+    "category": "Category",
+    "displayAll": "More",
+    "displayLess": "Less",
+    "sort": "Sort",
+    "name": "Name",
+    "cheap": "Cheap to expensive",
+    "expensive": "Expensive to cheap",
+    "confirm": "Confirm",
+
+    "//contactSection1": "Əlaqə Hissəsi",
+    "contactFirst":"Contact",
+    "map": "On the map",
+
+    "//contactSection": "Contact Section",
+    "contact": "Contact",
+    "aboutCompany": "About the Company",
+    "career": "Career",
+    "qarabagProgram": "\"Qarabag\" Program",
+    "contactVideo": "Contact Video",
+
+    "//infoSection": "Information Section",
+    "info": "Information",
+    "privacyPolicy": "Privacy Policy",
+    "pricingPolicy": "Pricing Policy",
+    "complaintManagementPolicy": "Complaint Management Policy",
+    "termsOfUse": "Terms of Use",
+    "bestPriceGuarantee": "Best Price Guarantee!",
+
+    "//customersSection": "For Customers Section",
+    "forCustomers": "For Customers",
+    "tradeIn": "Trade-in",
+    "deliveryAndPayment": "Delivery and Payment",
+    "installmentPaymentTerms": "Installment Payment Terms",
+    "returnPolicy": "Return Policy",
+    "ultraGoldGuarantee": "Ultra Gold Guarantee",
+    "monthlyPaymentsProcessing": "Monthly Payments Processing",
+    "stayUs": "Stay with us"
+
 }
   

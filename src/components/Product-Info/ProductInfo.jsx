@@ -11,8 +11,11 @@ import birbank from '../../assets/images/birbank-cashback-debet.png';
 import { CiCirclePlus } from 'react-icons/ci';
 import BuyOneClick from '../buy-oneClick/BuyOneClick';
 import LoginSidebar from '../login-sidebar/LoginSidebar';
+import { useTranslation } from 'react-i18next';
 
 function ProductInfo() {
+	const { t, i18n } = useTranslation();
+
 	const [data, setData] = useState([]);
 	const { id } = useParams();
 
@@ -126,13 +129,13 @@ function ProductInfo() {
 									onClick={addBasket}
 									className='w-full sm:w-[40%] flex items-center justify-center gap-2 bg-[#FF003C] text-white py-3 px-4 sm:py-4 sm:px-16 rounded-lg text-[16px] sm:text-[18px] font-[500]'>
 									<SlBasket size={19} />
-									Səbətə at
+									{t('addBasket')}
 								</button>
 								<button
 									onClick={openPaymentModal}
 									className='w-full sm:w-[40%] flex items-center justify-center gap-2 bg-none border border-black py-3 px-4 sm:py-4 sm:px-16 rounded-lg text-[16px] sm:text-[18px] font-[500]'>
 									<TbHandClick size={19} />
-									Bir kliklə al
+									{t('buyOneClick')}
 								</button>
 								<div className='bg-[#F3F3F3] p-3 sm:p-4 rounded-xl flex justify-center items-center'>
 									<IoMdHeartEmpty size={20} sm:size={25} />
@@ -145,10 +148,10 @@ function ProductInfo() {
 
 						<div className='calculator p-4 sm:p-5 w-full border-b border-gray-200 border-solid mb-4 sm:mb-5'>
 							<h4 className='text-[14px] sm:text-[16px] font-[600] text-[#323232]'>
-								Hissəli alış kalkulyatoru
+								{t('calculator')}
 							</h4>
 							<p className='text-[10px] sm:text-[12px] font-[500] text-[#777] mt-2'>
-								Şərtlər ilk dəfə olaraq endirimli qiymətə tətbiq olunur
+								{t('calculatorInfo')}
 							</p>
 
 							<div className='flex flex-wrap sm:flex-nowrap'>
@@ -168,7 +171,7 @@ function ProductInfo() {
 														: 'bg-[#F3F3F3] text-[#323232]'
 												}`}>
 												<p className='text-[10px] sm:text-[12px] font-[#323232]'>
-													{item + ' ay'}
+													{item} {t('month')}
 												</p>
 											</div>
 										</div>
@@ -176,7 +179,7 @@ function ProductInfo() {
 								</div>
 								<div className='mt-3 border border-gray-200 w-full sm:w-[20%] flex flex-col items-center justify-center rounded-lg py-2 text-center border-s-0 rounded-s-none'>
 									<p className='text-[10px] sm:text-[12px] font-[500] text-[#323232]'>
-										Aylıq ödəniş
+										{t('monthlyPayment')}
 									</p>
 									<p className='text-[14px] sm:text-[16px] font-[600] mt-3'>
 										{(data.price / duration).toFixed(2) + ' ₼'}
@@ -186,14 +189,14 @@ function ProductInfo() {
 							<div className='flex items-center gap-1 mt-3'>
 								<IoIosInformationCircleOutline className='text-[14px] sm:text-[16px] text-[#777] font-[500]' />
 								<p className='text-[10px] sm:text-[12px] text-[#777] font-[500]'>
-									Sifarişin rəsmiləşdirilməsi zamanı komissiya əlavə oluna bilər
+									{t('commissionInfo')}
 								</p>
 							</div>
 						</div>
 
 						<div className='partly-buy p-4 sm:p-5 py-0 w-full border-b border-gray-200 border-solid mb-4 sm:mb-5'>
 							<h4 className='text-[14px] sm:text-[16px] font-[600] text-[#323232]'>
-								Hissə-hissə alın
+								{t('buyInstallments')}
 							</h4>
 
 							<div className='flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-4 border-black border-[1.5px] p-2 sm:p-3 w-full sm:w-[40%] rounded-xl my-3 sm:my-4'>
@@ -203,7 +206,7 @@ function ProductInfo() {
 									alt='Birbank Logo'
 								/>
 								<p className='text-[12px] sm:text-[14px] font-[500]'>
-									12 ay {(data.price / 12).toFixed(2) + ' ₼'}
+									12 {t('month')} {(data.price / 12).toFixed(2) + ' ₼'}
 								</p>
 							</div>
 						</div>
@@ -212,7 +215,7 @@ function ProductInfo() {
 
 				<div className='flex flex-col gap-2 w-full py-3 bg-white px-5 sm:px-7 mt-3 rounded-lg'>
 					<h3 className='font-[600] text-[18px] sm:text-[20px]'>
-						Xüsusiyyətlər
+						{t('features')}
 					</h3>
 
 					<div>

@@ -3,7 +3,6 @@ import Header from './components/header/Header';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Home from './components/home/Home';
 import Stores from './components/stores/Stores';
-import Corporate from './components/corporate/Corporate';
 import NotFound from './components/not-found/NotFound';
 import TradeIn from './components/trade-in/TradeIn';
 import Footer from './components/footer/Footer';
@@ -28,7 +27,6 @@ function App() {
 					<Route path='/' element={<Home />} />
 					<Route path='/trade-in' element={<TradeIn/>} />
 					<Route path='/stores' element={<Stores />} />
-					<Route path='/corporate' element={<Corporate />} />
           			<Route path='*' element={<NotFound/>} />
 
 					<Route path='/about-company' element={<AboutCompany/>} />

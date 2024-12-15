@@ -5,8 +5,11 @@ import { SlBasket } from 'react-icons/sl';
 import { LiaBalanceScaleSolid } from 'react-icons/lia';
 import { IoMdHeartEmpty } from 'react-icons/io';
 import LoginSidebar from '../login-sidebar/LoginSidebar';
+import { useTranslation } from 'react-i18next';
 
 function Telefoniya() {
+	const { t, i18n } = useTranslation();
+
 	const [data, setData] = useState([]);
 	const [typeOfProducts, setTypeOfProducts] = useState([]);
 	const [category, setCategory] = useState([]);
@@ -128,7 +131,7 @@ function Telefoniya() {
 				</header>
 
 				<main className=' ps-6 my-8 w-[100%]'>
-					<h3 className='font-[600] text-[20px]'>Top satılanlar</h3>
+					<h3 className='font-[600] text-[20px]'>{t('bestSelling')}</h3>
 
 					<div
 						className='flex gap-2 mt-8 overflow-x-scroll overflow-y-hidden 
@@ -177,7 +180,7 @@ function Telefoniya() {
 														: item.price + ' ₼'}
 												</h3>
 												<p className='font-[600] text-[12px] text-[#323232]'>
-													0% 12 ay
+													0% 12 {t('month')}
 												</p>
 											</div>
 										</div>
@@ -208,7 +211,7 @@ function Telefoniya() {
 													size={20}
 													style={{ cursor: 'pointer', fil: 'white' }}
 												/>{' '}
-												Səbətə at
+												{t('addBasket')}
 											</button>
 										</div>
 									)}

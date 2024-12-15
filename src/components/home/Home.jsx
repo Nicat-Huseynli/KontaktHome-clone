@@ -375,10 +375,10 @@ function Home() {
 						<CiCreditCard2 className='text-red-500 lg:text-[30px] md:text-[25px] sm:text-[50px] max-sm:text-[70px]' />
 						<div className='flex flex-col gap-3'>
 							<h3 className='font-[600] text-[14px] sm:text-[16px] md:text-[18px]'>
-								Qapıda rəsmiləşdirmə
+								{t('clearance')}
 							</h3>
 							<p className='font-[500] text-[12px] sm:text-[14px] text-[#777]'>
-								Nağd, hissə-hissə və ya kartla ödəmə imkanı
+								{t('clearanceInfo')}
 							</p>
 						</div>
 					</Link>
@@ -386,10 +386,10 @@ function Home() {
 						<SiAdguard className='text-red-500 lg:text-[30px] md:text-[25px] sm:text-[40px] max-sm:text-[70px]' />
 						<div className='flex flex-col gap-3'>
 							<h3 className='font-[600] text-[14px] sm:text-[16px] md:text-[18px]'>
-								Zəmanət seçimi
+								{t('warrantyOption')}
 							</h3>
 							<p className='font-[500] text-[12px] sm:text-[14px] text-[#777]'>
-								İstehsalçı zəmanəti, qızıl zəmanət, zəmanət plus
+								{t('warrantyOptionInfo')}
 							</p>
 						</div>
 					</Link>
@@ -399,10 +399,10 @@ function Home() {
 						<TbTruckDelivery className='text-red-500 lg:text-[30px] md:text-[25px] sm:text-[40px] max-sm:text-[70px]' />
 						<div className='flex flex-col gap-3'>
 							<h3 className='font-[600] text-[14px] sm:text-[16px] md:text-[18px]'>
-								Pulsuz çatdırılma
+								{t('delivery')}
 							</h3>
 							<p className='font-[500] text-[12px] sm:text-[14px] text-[#777]'>
-								49.99AZN-dən yuxarı sifarişlərə pulsuz çatdırılma
+								{t('deliveryInfo')}
 							</p>
 						</div>
 					</Link>
@@ -412,10 +412,10 @@ function Home() {
 						<PiMedal className='text-red-500 lg:text-[30px] md:text-[25px] sm:text-[40px] max-sm:text-[70px]' />
 						<div className='flex flex-col gap-3'>
 							<h3 className='font-[600] text-[14px] sm:text-[16px] md:text-[18px]'>
-								Ən yaxşı qiymətə zəmanət!
+								{t('guarantee')}
 							</h3>
 							<p className='font-[500] text-[12px] sm:text-[14px] text-[#777]'>
-								Daha ucuz tap, qiymət fərqinin 120%-ni geri al
+								{t('guaranteeInfo')}
 							</p>
 						</div>
 					</Link>
@@ -426,28 +426,28 @@ function Home() {
 					<header className='w-[100%] flex flex-col gap-4'>
 						<div className='flex items-center justify-between px-3'>
 							<h2 className='text-center font-[600] text-[20px]'>
-								Günün Təklifi
+								{t('dailyOffer')}
 							</h2>
 							<div className='countdown flex gap-4 justify-center items-center'>
 								<div className='felx flex-col items-center justify-center'>
 									<div className='text-[#17a539] font-[600] text-center'>
 										<Countdown renderer={hour} date={Date.now() + 20000000} />
 									</div>
-									<span className='text-[12px] font-[500]'>saat</span>
+									<span className='text-[12px] font-[500]'>{t('hour')}</span>
 								</div>
 
 								<div className='felx flex-col border-x-2 border-x-[#F3F3F3] border-solid px-2'>
 									<div className='text-[#17a539] font-[600] text-center'>
 										<Countdown renderer={minute} date={Date.now() + 20000000} />
 									</div>
-									<span className='text-[12px] font-[500]'>dəqiqə</span>
+									<span className='text-[12px] font-[500]'>{t('minute')}</span>
 								</div>
 
 								<div className='felx flex-col'>
 									<div className='text-[#17a539] font-[600] text-center'>
 										<Countdown renderer={second} date={Date.now() + 20000000} />
 									</div>
-									<span className='text-[12px] font-[500]'>saniyə</span>
+									<span className='text-[12px] font-[500]'>{t('second')}</span>
 								</div>
 							</div>
 						</div>
@@ -462,7 +462,7 @@ function Home() {
 							autoPlaySpeed={1500}
 							removeArrowOnDeviceType={['tablet', 'mobile', 'desktop']}
 							infinite={true}>
-							{data.slice(0, 5).map((item) => {							
+							{data.slice(0, 5).map((item) => {
 								return (
 									<div key={item.id} className='flex items-start gap-6'>
 										<Link to={`/productInfo/${item.id}`}>
@@ -495,7 +495,7 @@ function Home() {
 															</del>{' '}
 														</h3>
 													</div>
-													<p className='text-[#777] mt-2'>0% 18 ay</p>
+													<p className='text-[#777] mt-2'>0% 18 {t('month')}</p>
 												</div>
 											</Link>
 
@@ -504,7 +504,7 @@ function Home() {
 													size={20}
 													style={{ cursor: 'pointer', fil: 'white' }}
 												/>{' '}
-												Səbətə at
+												{t('addBasket')}
 											</button>
 
 											{/* <Link className='flex items-center sm:text-[14px] max-sm:text-[12px] justify-center mt-3 w-[100%] hover:underline '>
@@ -520,7 +520,7 @@ function Home() {
 
 				{/* Sales leaders */}
 				<div className='mt-12 w-[100%] px-9 flex flex-col mb-10'>
-					<h3 className='text-[20px] font-[600]'>Satış liderləri</h3>
+					<h3 className='text-[20px] font-[600]'>{t('salesLeaders')}</h3>
 					<div className='flex gap-3 mt-6 flex-wrap mb-3'>
 						{categories.map((category, index) => {
 							return (
@@ -611,7 +611,7 @@ function Home() {
 												size={20}
 												style={{ cursor: 'pointer', fil: 'white' }}
 											/>{' '}
-											Səbətə at
+											{t('addBasket')}
 										</button>
 									</div>
 								)}
@@ -622,7 +622,7 @@ function Home() {
 
 				{/* Daily Offer Container */}
 				<div className='mt-12 w-[100%] px-9 flex flex-col mb-[120px]'>
-					<h3 className='text-[20px] font-[600] mb-6'>Günün təklifi</h3>
+					<h3 className='text-[20px] font-[600] mb-6'>{t('dailyOffer')}</h3>
 					<div
 						className='flex gap-2 overflow-x-scroll overflow-y-hidden 
 					[&::-webkit-scrollbar]:w-1
@@ -698,7 +698,7 @@ function Home() {
 													size={20}
 													style={{ cursor: 'pointer', fil: 'white' }}
 												/>{' '}
-												Səbətə at
+												{t('addBasket')}
 											</button>
 										</div>
 									)}

@@ -7,11 +7,79 @@
     "catalog": "Kataloq",
     "searching": "Axtarış...",
 
-    
+
     "//secondComment": "Aside Daily Offer",
     "dailyOffer": "Günün təklifi",
     "hour": "saat",
     "minute": "dəqiqə",
     "second": "saniyə",
-    "addBasket": "Səbətə at"
+    "addBasket": "Səbətə at",
+
+    "month": "ay",
+
+    "//thirdComment": "Info",
+    "clearance": "Qapıda rəsmiləşdirmə",
+    "clearanceInfo": "Nağd, hissə-hissə və ya kartla ödəmə imkanı",
+    "warrantyOption": "Zəmanət seçimi",
+    "warrantyOptionInfo": "İstehsalçı zəmanəti, qızıl zəmanət, zəmanət plus",
+    "delivery": "Pulsuz çatdırılma",
+    "deliveryInfo": "49.99AZN-dən yuxarı sifarişlərə pulsuz çatdırılma",
+    "guarantee": "Ən yaxşı qiymətə zəmanət!",
+    "guaranteeInfo":"Daha ucuz tap, qiymət fərqinin 120%-ni geri al",
+
+    "salesLeaders": "Satış liderləri",
+
+    "//fourthComment": "Telefoniya",
+    "bestSelling": "Top satılanlar",    
+
+    "//fifthComment": "Product Info",
+    "buyOneClick": "Bir kliklə al",
+    "calculator":"Hissəli alış kalkulyatoru",
+    "calculatorInfo": "Şərtlər ilk dəfə olaraq endirimli qiymətə tətbiq olunur",
+    "commissionInfo":"Sifarişin rəsmiləşdirilməsi zamanı komissiya əlavə oluna bilər",
+    "buyInstallments":"Hissə-hissə alın",
+    "features":"Xüsusiyyətlər",
+
+    "//sixthComment": "Products",
+    "filter":"Filtr",
+    "price":"Qiymət",
+    "manufacturer": "İstehsalçı",
+    "category": "Kateqoriya",
+    "displayAll": "Hamısını göstər",
+    "displayLess": "Daha az",
+    "sort": "Sıralama",
+    "name": "Məhsul Adı",
+    "cheap": "Ucuzdan bahaya",
+    "expensive": "Bahadan ucuza",
+    "confirm": "Təsdiq et",
+
+    "//contactSection1": "Əlaqə Hissəsi",
+    "contactFirst":"Əlaqə",
+    "map": "Biz xəritədə",
+
+    "//contactSection 2": "Kontakt Hissəsi",
+    "contact": "Kontakt",
+    "aboutCompany": "Şirkət haqqında",
+    "career": "Karyera",
+    "qarabagProgram": "\"Qarabağ\" proqramı",
+    "contactVideo": "Kontakt Video",
+    
+    "//infoSection": "Məlumat Hissəsi",
+    "info": "Məlumat",
+    "privacyPolicy": "Konfidensiallıq siyasəti",
+    "pricingPolicy": "Qiymət siyasəti",
+    "complaintManagementPolicy": "Şikayətlərin idarəolunması siyasəti",
+    "termsOfUse": "Saytın istifadə şərtləri",
+    "bestPriceGuarantee": "Ən yaxşı qiymətə zəmanət!",
+    
+    "//customersSection": "Müştərilər üçün Hissə",
+    "forCustomers": "Müştərilər üçün",
+    "tradeIn": "Trade-in",
+    "deliveryAndPayment": "Çatdırılma və ödəmə",
+    "installmentPaymentTerms": "Hissə-hissə ödəniş şərtləri",
+    "returnPolicy": "Geri qaytarma siyasəti",
+    "ultraGoldGuarantee": "Ultra Qızıl Zəmanət",
+    "monthlyPaymentsProcessing": "Aylıq ödənişlərin həyata keçirilməsi",
+    "stayUs": "Bizimlə qalın:"
+      
 }
