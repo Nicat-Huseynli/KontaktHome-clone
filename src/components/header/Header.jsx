@@ -14,7 +14,6 @@ import { SlBasket } from 'react-icons/sl';
 import { RiAccountCircleLine } from 'react-icons/ri';
 import Sticky from 'react-sticky-el';
 import Category from '../category/Category';
-import AccountSetting from '../account-setting/accountSetting';
 import axios from 'axios';
 
 function Header() {
