@@ -1,0 +1,18 @@
+.payment-modal{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-block: 17px;
+
+    a{
+        width: 31%;
+        max-width: 160px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        background: #f3f3f3;
+        max-height: 65px;
+        padding: 15px 10px;
+    }
+}

@@ -1,0 +1,1890 @@
+{
+  "banners": [
+    {
+      "id": 1,
+      "imageUrl": "https://example.com/banner1.jpg",
+      "title": "New Year Sale",
+      "description": "Up to 50% off on electronics"
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://example.com/banner2.jpg",
+      "title": "Furniture Offers",
+      "description": "Modern designs at great prices"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Phones",
+      "imageUrl": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iNS43NSIgeT0iMi43NSIgd2lkdGg9IjEyLjUiIGhlaWdodD0iMTguNSIgcng9IjEuNzUiIHN0cm9rZT0iIzc3Nzc3NyIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KPHBhdGggZD0iTTEwIDE5SDE0IiBzdHJva2U9IiNGRjAwM0MiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K"
+    },
+    {
+      "id": 2,
+      "name": "Smart Watches",
+      "imageUrl": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iNC43NSIgeT0iNC43NSIgd2lkdGg9IjE0LjUiIGhlaWdodD0iMTQuNSIgcng9IjIuMjUiIHN0cm9rZT0iIzc3Nzc3NyIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KPHBhdGggZD0iTTE2IDQuNzVIMTcuMjYzNEwxNi42NTg0IDMuNjQwODZMMTUuODUxOCAyLjE2MjAxQzE1LjU0NTEgMS41OTk4IDE0Ljk1NTkgMS4yNSAxNC4zMTU1IDEuMjVIOS42ODQ1NEM5LjA0NDE0IDEuMjUgOC40NTQ4OCAxLjU5OTggOC4xNDgyMiAyLjE2MjAxTDcuMzQxNTggMy42NDA4Nkw2LjczNjU5IDQuNzVIOEgxNloiIHN0cm9rZT0iIzc3Nzc3NyIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KPHBhdGggZD0iTTE2IDE5LjI1SDE3LjI2MzRMMTYuNjU4NCAyMC4zNTkxTDE1Ljg1MTggMjEuODM4QzE1LjU0NTEgMjIuNDAwMiAxNC45NTU5IDIyLjc1IDE0LjMxNTUgMjIuNzVIOS42ODQ1NEM5LjA0NDE0IDIyLjc1IDguNDU0ODggMjIuNDAwMiA4LjE0ODIyIDIxLjgzOEw3LjM0MTU4IDIwLjM1OTFMNi43MzY1OSAxOS4yNUg4SDE2WiIgc3Ryb2tlPSIjNzc3Nzc3IiBzdHJva2Utd2lkdGg9IjEuNSIvPgo8cGF0aCBkPSJNNy43NSAxNUM4LjE2NDIxIDE1IDguNSAxNS4zMzU4IDguNSAxNS43NUM4LjUgMTYuMTY0MiA4LjE2NDIxIDE2LjUgNy43NSAxNi41QzcuMzM1NzkgMTYuNSA3IDE2LjE2NDIgNyAxNS43NUM3IDE1LjMzNTggNy4zMzU3OSAxNSA3Ljc1IDE1WiIgZmlsbD0iI0ZGMDAzQyIvPgo8cGF0aCBkPSJNNy43NSAxMi41QzguMTY0MjEgMTIuNSA4LjUgMTIuODM1OCA4LjUgMTMuMjVDOC41IDEzLjY2NDIgOC4xNjQyMSAxNCA3Ljc1IDE0QzcuMzM1NzkgMTQgNyAxMy42NjQyIDcgMTMuMjVDNyAxMi44MzU4IDcuMzM1NzkgMTIuNSA3Ljc1IDEyLjVaIiBmaWxsPSIjRkYwMDNDIi8+CjxwYXRoIGQ9Ik0xMiA3LjVDMTIuMzc5NyA3LjUgMTIuNjkzNSA3Ljc4MjE1IDEyLjc0MzIgOC4xNDgyM0wxMi43NSA4LjI1VjExLjI1SDE1QzE1LjQxNDIgMTEuMjUgMTUuNzUgMTEuNTg1OCAxNS43NSAxMkMxNS43NSAxMi4zNzk3IDE1LjQ2NzggMTIuNjkzNSAxNS4xMDE4IDEyLjc0MzJMMTUgMTIuNzVIMTJDMTEuNjIwMyAxMi43NSAxMS4zMDY1IDEyLjQ2NzggMTEuMjU2OCAxMi4xMDE4TDExLjI1IDEyTDExLjI1IDguMjVDMTEuMjUgNy44MzU3OSAxMS41ODU4IDcuNSAxMiA3LjVaIiBmaWxsPSIjRkYwMDNDIi8+CjxwYXRoIGQ9Ik03Ljc1IDEwQzguMTY0MjEgMTAgOC41IDEwLjMzNTggOC41IDEwLjc1QzguNSAxMS4xNjQyIDguMTY0MjEgMTEuNSA3Ljc1IDExLjVDNy4zMzU3OSAxMS41IDcgMTEuMTY0MiA3IDEwLjc1QzcgMTAuMzM1OCA3LjMzNTc5IDEwIDcuNzUgMTBaIiBmaWxsPSIjRkYwMDNDIi8+Cjwvc3ZnPgo="
+    },
+    {
+      "id": 3,
+      "name": "Notebooks and Tablets",
+      "imageUrl": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMjAuMjUiIHk9IjQuNzUiIHdpZHRoPSIxMi41IiBoZWlnaHQ9IjE2LjUiIHJ4PSIxLjc1IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCAyMC4yNSA0Ljc1KSIgc3Ryb2tlPSIjNzc3Nzc3IiBzdHJva2Utd2lkdGg9IjEuNSIvPgo8cGF0aCBkPSJNMiAyMEgyMiIgc3Ryb2tlPSIjNzc3Nzc3IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxwYXRoIGQ9Ik03IDdIMTciIHN0cm9rZT0iI0ZGMDAzQyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPgo="
+    },
+    {
+      "id": 4,
+      "name": "For Gamers",
+      "imageUrl": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0Ljk5NzcgNUMxOC44NjM3IDUgMjEuOTk3NyA4LjEzNDAxIDIxLjk5NzcgMTJDMjEuOTk3NyAxNS43ODU1IDE4Ljk5MjkgMTguODY5MSAxNS4yMzg0IDE4Ljk5NTlMMTQuOTk3NyAxOUg5LjAwMTk1QzUuMTM1OTYgMTkgMi4wMDE5NSAxNS44NjYgMi4wMDE5NSAxMkMyLjAwMTk1IDguMjE0NTUgNS4wMDY3NCA1LjEzMDkgOC43NjEzIDUuMDA0MDZMOS4wMDE5NSA1SDE0Ljk5NzdaTTE0Ljk5NzcgNi41SDkuMDAxOTVDNS45NjQzOSA2LjUgMy41MDE5NSA4Ljk2MjQzIDMuNTAxOTUgMTJDMy41MDE5NSAxNC45NjM1IDUuODQ1NzMgMTcuMzc5NSA4Ljc4MDc1IDE3LjQ5NTZMOS4wMDE5NSAxNy41SDE0Ljk5NzdDMTguMDM1MyAxNy41IDIwLjQ5NzcgMTUuMDM3NiAyMC40OTc3IDEyQzIwLjQ5NzcgOS4wMzY1MiAxOC4xNTM5IDYuNjIwNDYgMTUuMjE4OSA2LjUwNDM3TDE0Ljk5NzcgNi41WiIgZmlsbD0iIzc3Nzc3NyIvPgo8cGF0aCBkPSJNOCA5QzguNDE0MjEgOSA4Ljc1IDkuMzM1NzkgOC43NSA5Ljc1TDguNzQ5MTIgMTEuMjQ4TDEwLjI1IDExLjI0ODdDMTAuNjY0MiAxMS4yNDg3IDExIDExLjU4NDUgMTEgMTEuOTk4N0MxMSAxMi40MTMgMTAuNjY0MiAxMi43NDg3IDEwLjI1IDEyLjc0ODdMOC43NDkxMiAxMi43NDhMOC43NSAxNC4yNUM4Ljc1IDE0LjY2NDIgOC40MTQyMSAxNSA4IDE1QzcuNTg1NzkgMTUgNy4yNSAxNC42NjQyIDcuMjUgMTQuMjVMNy4yNDkxMiAxMi43NDhMNS43NSAxMi43NDg3QzUuMzM1NzkgMTIuNzQ4NyA1IDEyLjQxMyA1IDExLjk5ODdDNSAxMS41ODQ1IDUuMzM1NzkgMTEuMjQ4NyA1Ljc1IDExLjI0ODdMNy4yNDkxMiAxMS4yNDhMNy4yNSA5Ljc1QzcuMjUgOS4zMzU3OSA3LjU4NTc5IDkgOCA5Wk0xNC43NSAxMi41QzE1LjQ0MDQgMTIuNSAxNiAxMy4wNTk2IDE2IDEzLjc1QzE2IDE0LjQ0MDQgMTUuNDQwNCAxNSAxNC43NSAxNUMxNC4wNTk2IDE1IDEzLjUgMTQuNDQwNCAxMy41IDEzLjc1QzEzLjUgMTMuMDU5NiAxNC4wNTk2IDEyLjUgMTQuNzUgMTIuNVpNMTYuNzUgOUMxNy40NDA0IDkgMTggOS41NTk2NCAxOCAxMC4yNUMxOCAxMC45NDA0IDE3LjQ0MDQgMTEuNSAxNi43NSAxMS41QzE2LjA1OTYgMTEuNSAxNS41IDEwLjk0MDQgMTUuNSAxMC4yNUMxNS41IDkuNTU5NjQgMTYuMDU5NiA5IDE2Ljc1IDlaIiBmaWxsPSIjRkYwMDNDIi8+Cjwvc3ZnPgo="
+    },
+    {
+      "id": 5,
+      "name": "TV & Audio",
+      "imageUrl": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMjEuMjUiIHk9IjQuNzQ5NTEiIHdpZHRoPSIxMy41IiBoZWlnaHQ9IjE4LjUiIHJ4PSIxLjc1IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCAyMS4yNSA0Ljc0OTUxKSIgc3Ryb2tlPSIjNzc3Nzc3IiBzdHJva2Utd2lkdGg9IjEuNSIvPgo8cGF0aCBkPSJNNS41MzAzMyAxOS41Mjk4TDYuMDYwNjYgMTguOTk5NUw1IDE3LjkzODlMNC40Njk2NyAxOC40NjkyTDUuNTMwMzMgMTkuNTI5OFpNMy40Njk2NyAxOS40NjkyQzMuMTc2NzggMTkuNzYyMSAzLjE3Njc4IDIwLjIzNjkgMy40Njk2NyAyMC41Mjk4QzMuNzYyNTYgMjAuODIyNyA0LjIzNzQ0IDIwLjgyMjcgNC41MzAzMyAyMC41Mjk4TDMuNDY5NjcgMTkuNDY5MlpNNC40Njk2NyAxOC40NjkyTDMuNDY5NjcgMTkuNDY5Mkw0LjUzMDMzIDIwLjUyOThMNS41MzAzMyAxOS41Mjk4TDQuNDY5NjcgMTguNDY5MloiIGZpbGw9IiM3Nzc3NzciLz4KPHBhdGggZD0iTTE5LjUzMDMgMTguNDY5MkwxOSAxNy45Mzg5TDE3LjkzOTMgMTguOTk5NUwxOC40Njk3IDE5LjUyOThMMTkuNTMwMyAxOC40NjkyWk0xOS40Njk3IDIwLjUyOThDMTkuNzYyNiAyMC44MjI3IDIwLjIzNzQgMjAuODIyNyAyMC41MzAzIDIwLjUyOThDMjAuODIzMiAyMC4yMzY5IDIwLjgyMzIgMTkuNzYyMSAyMC41MzAzIDE5LjQ2OTJMMTkuNDY5NyAyMC41Mjk4Wk0xOC40Njk3IDE5LjUyOThMMTkuNDY5NyAyMC41Mjk4TDIwLjUzMDMgMTkuNDY5MkwxOS41MzAzIDE4LjQ2OTJMMTguNDY5NyAxOS41Mjk4WiIgZmlsbD0iIzc3Nzc3NyIvPgo8cGF0aCBkPSJNMTkgNi45OTk1MUMxOSA2Ljk5OTUxIDkuNDY2MzkgNi45OTk1MSA4LjUgNi45OTk1MUM3LjUzMzYxIDYuOTk5NTEgNSA2Ljk5OTUxIDUgNi45OTk1MSIgc3Ryb2tlPSIjRkYwMDNDIiBzdHJva2Utd2lkdGg9IjEuMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg=="
+    },
+    {
+      "id": 6,
+      "name": "Kitchen Electronics",
+      "imageUrl": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3Ljc0OTkgMi4wMDA5OEMxOC45NDA3IDIuMDAwOTggMTkuOTE1NSAyLjkyNjE0IDE5Ljk5NDcgNC4wOTY5M0wxOS45OTk5IDQuMjUwOThWMTkuNzQ5QzE5Ljk5OTkgMjAuOTM5OSAxOS4wNzQ3IDIxLjkxNDcgMTcuOTAzOSAyMS45OTM5TDE3Ljc0OTkgMjEuOTk5SDYuMjVDNS4wNTkxNCAyMS45OTkgNC4wODQzNiAyMS4wNzM5IDQuMDA1MTkgMTkuOTAzMUw0IDE5Ljc0OVY0LjI1MDk4QzQgMy4wNjAxMSA0LjkyNTE2IDIuMDg1MzMgNi4wOTU5NSAyLjAwNjE3TDYuMjUgMi4wMDA5OEgxNy43NDk5Wk0xNy43NDk5IDMuNTAwOThINi4yNUM1Ljg3MDMgMy41MDA5OCA1LjU1NjUxIDMuNzgzMTMgNS41MDY4NSA0LjE0OTIxTDUuNSA0LjI1MDk4VjE5Ljc0OUM1LjUgMjAuMTI4NyA1Ljc4MjE1IDIwLjQ0MjUgNi4xNDgyMyAyMC40OTIyTDYuMjUgMjAuNDk5SDE3Ljc0OTlDMTguMTI5NiAyMC40OTkgMTguNDQzNCAyMC4yMTY5IDE4LjQ5MyAxOS44NTA4TDE4LjQ5OTkgMTkuNzQ5VjQuMjUwOThDMTguNDk5OSAzLjg3MTI4IDE4LjIxNzcgMy41NTc0OSAxNy44NTE2IDMuNTA3ODJMMTcuNzQ5OSAzLjUwMDk4Wk0xOC43NSA3LjAwMDAxQzE5LjE2NDIgNy4wMDAwMSAxOS41IDcuMzM1OCAxOS41IDcuNzUwMDFDMTkuNSA4LjEyOTcxIDE5LjIxNzggOC40NDM1IDE4Ljg1MTggOC40OTMxNkwxOC43NSA4LjUwMDAxSDUuMjVDNC44MzU3OSA4LjUwMDAxIDQuNSA4LjE2NDIyIDQuNSA3Ljc1MDAxQzQuNSA3LjM3MDMxIDQuNzgyMTUgNy4wNTY1MiA1LjE0ODIzIDcuMDA2ODZMNS4yNSA3LjAwMDAxSDE4Ljc1WiIgZmlsbD0iIzc3Nzc3NyIvPgo8Y2lyY2xlIGN4PSIxMiIgY3k9IjE0IiByPSIzIiBzdHJva2U9IiNGRjAwM0MiIHN0cm9rZS13aWR0aD0iMS41Ii8+Cjwvc3ZnPgo="
+    },
+    {
+      "id": 7,
+      "name": "Home Electronics",
+      "imageUrl": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMuMTgxMTUgMTUuNVYxMi43NUMzLjE4MTE1IDExLjc4MzUgMy45NjQ2NSAxMSA0LjkzMTE1IDExSDcuNTI3MzFDMTIuMzA2NyAxMSAxNi4xODEyIDE0Ljg3NDUgMTYuMTgxMiAxOS42NTM4VjE5LjY1MzhDMTYuMTgxMiAyMC4zOTczIDE1LjU3ODUgMjEgMTQuODM1IDIxSDUiIHN0cm9rZT0iIzc3Nzc3NyIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KPGNpcmNsZSBjeD0iNSIgY3k9IjE4IiByPSIzIiBzdHJva2U9IiNGRjAwM0MiIHN0cm9rZS13aWR0aD0iMS41Ii8+CjxwYXRoIGQ9Ik0xMC41IDExLjVMMTEuMDkwMSAxMC41MTEzQzExLjUxMzggOS45NjE1MiAxMS42MDEgOS4yMjM0MSAxMS4zMTc0IDguNTg5MzlMMTAuOTA1NCA3LjY2OTVDMTAuMzQ0IDYuNDE2MTEgMTEuMjYxNyA1IDEyLjYzNTIgNUMxMy40MDI3IDUgMTQuMDk0NiA1LjQ2MzI0IDE0LjM4NzEgNi4xNzI3NkwyMC40ODAzIDIwLjkwMTIiIHN0cm9rZT0iIzc3Nzc3NyIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0xOCAyMUwyMiAyMSIgc3Ryb2tlPSIjNzc3Nzc3IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg=="
+    },
+    {
+      "id": 8,
+      "name": "Hobby",
+      "imageUrl": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEzLjcxOTcgOS4yMTk2N0MxNC4wMTI2IDguOTI2NzggMTQuNDg3NCA4LjkyNjc4IDE0Ljc4MDMgOS4yMTk2N0MxNS4wNzMyIDkuNTEyNTYgMTUuMDczMiA5Ljk4NzQ0IDE0Ljc4MDMgMTAuMjgwM0wxMC4yODAzIDE0Ljc4MDNDOS45ODc0NCAxNS4wNzMyIDkuNTEyNTYgMTUuMDczMiA5LjIxOTY3IDE0Ljc4MDNDOC45MjY3OCAxNC40ODc0IDguOTI2NzggMTQuMDEyNiA5LjIxOTY3IDEzLjcxOTdMMTMuNzE5NyA5LjIxOTY3WiIgZmlsbD0iI0ZGMDAzQyIvPgo8cGF0aCBkPSJNMTcuNzUgMkMyMC4wOTcyIDIgMjIgMy45MDI3OSAyMiA2LjI1VjcuMjVDMjIgMTUuMzk2MiAxNS4zOTYyIDIyIDcuMjUgMjJINi4yNUMzLjkwMjc5IDIyIDIgMjAuMDk3MiAyIDE3Ljc1VjE2Ljc1QzIgOC42MDM4IDguNjAzOCAyIDE2Ljc1IDJIMTcuNzVaTTIwLjUgNi4yNUMyMC41IDQuNzMxMjIgMTkuMjY4OCAzLjUgMTcuNzUgMy41SDE2Ljc1QzE2LjM0NjcgMy41IDE1Ljk0NzcgMy41MTgwMSAxNS41NTM2IDMuNTUzMjhMMjAuNDQ2NyA4LjQ0NjMxQzIwLjQ4MiA4LjA1MjI1IDIwLjUgNy42NTMyMyAyMC41IDcuMjVWNi4yNVpNMjAuMTUzMyAxMC4yNzQyTDEzLjcyNTcgMy44NDY3MUM4LjgwMzg2IDQuOTk1OCA0LjkzNjY1IDguODg4MjcgMy44MjQxNCAxMy44MjQxTDEwLjE3NiAyMC4xNzU4QzE1LjExMTggMTkuMDYzMyAxOS4wMDQzIDE1LjE5NjEgMjAuMTUzMyAxMC4yNzQyWk0zLjU0Mzc4IDE1LjY2NUMzLjUxNDc4IDE2LjAyMjkgMy41IDE2LjM4NDcgMy41IDE2Ljc1VjE3Ljc1QzMuNSAxOS4yNjg4IDQuNzMxMjIgMjAuNSA2LjI1IDIwLjVINy4yNUM3LjYxNTMyIDIwLjUgNy45NzcxOSAyMC40ODUyIDguMzM1MDQgMjAuNDU2MkwzLjU0Mzc4IDE1LjY2NVoiIGZpbGw9IiM3Nzc3NzciLz4KPC9zdmc+Cg=="
+    },
+    {
+      "id": 9,
+      "name": "Furniture",
+      "imageUrl": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTggMTNIMTYiIHN0cm9rZT0iI0ZGMDAzQyIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik01LjUzMDMzIDE5LjUzMDNMNi4wNjA2NiAxOUw1IDE3LjkzOTNMNC40Njk2NyAxOC40Njk3TDUuNTMwMzMgMTkuNTMwM1pNMy40Njk2NyAxOS40Njk3QzMuMTc2NzggMTkuNzYyNiAzLjE3Njc4IDIwLjIzNzQgMy40Njk2NyAyMC41MzAzQzMuNzYyNTYgMjAuODIzMiA0LjIzNzQ0IDIwLjgyMzIgNC41MzAzMyAyMC41MzAzTDMuNDY5NjcgMTkuNDY5N1pNNC40Njk2NyAxOC40Njk3TDMuNDY5NjcgMTkuNDY5N0w0LjUzMDMzIDIwLjUzMDNMNS41MzAzMyAxOS41MzAzTDQuNDY5NjcgMTguNDY5N1oiIGZpbGw9IiM3Nzc3NzciLz4KPHBhdGggZD0iTTE5LjUzMDMgMTguNDY5N0wxOSAxNy45MzkzTDE3LjkzOTMgMTlMMTguNDY5NyAxOS41MzAzTDE5LjUzMDMgMTguNDY5N1pNMTkuNDY5NyAyMC41MzAzQzE5Ljc2MjYgMjAuODIzMiAyMC4yMzc0IDIwLjgyMzIgMjAuNTMwMyAyMC41MzAzQzIwLjgyMzIgMjAuMjM3NCAyMC44MjMyIDE5Ljc2MjYgMjAuNTMwMyAxOS40Njk3TDE5LjQ2OTcgMjAuNTMwM1pNMTguNDY5NyAxOS41MzAzTDE5LjQ2OTcgMjAuNTMwM0wyMC41MzAzIDE5LjQ2OTdMMTkuNTMwMyAxOC40Njk3TDE4LjQ2OTcgMTkuNTMwM1oiIGZpbGw9IiM3Nzc3NzciLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02LjUgOS4yNDAwM0M2LjUgOS4yOTAzMSA2LjQ5NzUzIDkuMzQwMDIgNi40OTI2OSA5LjM4OTAzQzYuNDk3NTEgOS40MjMzOCA2LjUgOS40NTg0NyA2LjUgOS40OTQxNFYxMi45OTQxQzYuNSAxMy40MDg0IDYuMTY0MjEgMTMuNzQ0MSA1Ljc1IDEzLjc0NDFDNS4zMzU3OSAxMy43NDQxIDUgMTMuNDA4NCA1IDEyLjk5NDFMNSAxMC43NEg0LjVDMy45NDc3MiAxMC43NCAzLjUgMTEuMTg3NyAzLjUgMTEuNzRWMTYuNUMzLjUgMTcuMDUyMyAzLjk0NzcxIDE3LjUgNC41IDE3LjVIMTkuNUMyMC4wNTIzIDE3LjUgMjAuNSAxNy4wNTIzIDIwLjUgMTYuNVYxMS43NEMyMC41IDExLjE4NzcgMjAuMDUyMyAxMC43NCAxOS41IDEwLjc0SDE5VjEyLjk5NDFDMTkgMTMuNDA4NCAxOC42NjQyIDEzLjc0NDEgMTguMjUgMTMuNzQ0MUMxNy44MzU4IDEzLjc0NDEgMTcuNSAxMy40MDg0IDE3LjUgMTIuOTk0MVY5LjQ5NDE0QzE3LjUgOS40NTg0NyAxNy41MDI1IDkuNDIzMzggMTcuNTA3MyA5LjM4OTAzQzE3LjUwMjUgOS4zNDAwMiAxNy41IDkuMjkwMzEgMTcuNSA5LjI0MDAzVjYuNUMxNy41IDUuOTQ3NzIgMTcuMDUyMyA1LjUgMTYuNSA1LjVINy41QzYuOTQ3NzIgNS41IDYuNSA1Ljk0NzcyIDYuNSA2LjVWOS4yNDAwM1pNMTkuNSA5LjI0MDAzSDE5VjcuNzQwMDNWNi41QzE5IDUuMTE5MjkgMTcuODgwNyA0IDE2LjUgNEg3LjVDNi4xMTkyOSA0IDUgNS4xMTkyOSA1IDYuNVY3Ljc0MDAzVjkuMjQwMDNINC41QzMuMTE5MjkgOS4yNDAwMyAyIDEwLjM1OTMgMiAxMS43NFYxNi41QzIgMTcuODgwNyAzLjExOTI5IDE5IDQuNSAxOUgxOS41QzIwLjg4MDcgMTkgMjIgMTcuODgwNyAyMiAxNi41VjExLjc0QzIyIDEwLjM1OTMgMjAuODgwNyA5LjI0MDAzIDE5LjUgOS4yNDAwM1oiIGZpbGw9IiM3Nzc3NzciLz4KPC9zdmc+Cg=="
+    },
+    {
+      "id": 10,
+      "name": "Home and Garden",
+      "imageUrl": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy45OTk4IDEyLjVDMTQuODI4MiAxMi41IDE1LjQ5OTggMTMuMTcxNiAxNS40OTk4IDE0VjIwLjVIMTkuNDk5OFYxMC4xMzQ0QzE5LjQ5OTggOS44NDYwNiAxOS4zNzUzIDkuNTcxNzMgMTkuMTU4MyA5LjM4MTg0TDEyLjc2NDYgMy43ODczN0MxMi41NTI5IDMuNjAyMTEgMTIuMjgxMSAzLjUgMTEuOTk5OCAzLjVDMTEuNzE4NSAzLjUgMTEuNDQ2NyAzLjYwMjExIDExLjIzNSAzLjc4NzM3TDQuODQxMzEgOS4zODE4NEM0LjYyNDMgOS41NzE3MyA0LjQ5OTgyIDkuODQ2MDYgNC40OTk4MiAxMC4xMzQ0VjIwLjVIOC40OTk4MlYxNEM4LjQ5OTgyIDEzLjE3MTYgOS4xNzEzOSAxMi41IDkuOTk5ODIgMTIuNUgxMy45OTk4Wk0yLjc1MjI4IDExLjIwODJMMi45OTk4MiAxMC45OTE2VjIwLjVDMi45OTk4MiAyMS4zMjg0IDMuNjcxMzkgMjIgNC40OTk4MiAyMkg4LjQ5OTgyQzkuMzI4MjQgMjIgOS45OTk4MiAyMS4zMjg0IDkuOTk5ODIgMjAuNVYxNS41VjE0SDExLjQ5OThIMTIuNDk5OEgxMy45OTk4VjE1LjVWMjAuNUMxMy45OTk4IDIxLjMyODQgMTQuNjcxNCAyMiAxNS40OTk4IDIySDE5LjQ5OThDMjAuMzI4MiAyMiAyMC45OTk4IDIxLjMyODQgMjAuOTk5OCAyMC41VjEwLjk5MkwyMS4yNDY3IDExLjIwODFDMjEuNTU4MyAxMS40ODA5IDIyLjAzMjIgMTEuNDQ5NCAyMi4zMDUgMTEuMTM3N0MyMi41Nzc4IDEwLjgyNiAyMi41NDYzIDEwLjM1MjIgMjIuMjM0NiAxMC4wNzk0TDE1Ljg1MzYgNC40OTQyNEMxNS44MzkxIDQuNDgxNTIgMTUuODI0MiA0LjQ2OTQ3IDE1LjgwOSA0LjQ1ODA3TDEzLjc1MjQgMi42NTg1QzEzLjI2NzIgMi4yMzM5OSAxMi42NDQ1IDIgMTEuOTk5OCAyQzExLjM1NTIgMiAxMC43MzI0IDIuMjMzOTkgMTAuMjQ3MiAyLjY1ODVMOS4zMzk2NCAzLjQ1MjY1QzkuMzIyMzYgMy40NjUzNSA5LjMwNTQ4IDMuNDc4ODggOS4yODkwNSAzLjQ5MzI2TDEuNzY0MzQgMTAuMDc5NUMxLjQ1MjY2IDEwLjM1MjMgMS40MjExNSAxMC44MjYyIDEuNjkzOTYgMTEuMTM3OEMxLjk2Njc3IDExLjQ0OTUgMi40NDA2IDExLjQ4MSAyLjc1MjI4IDExLjIwODJaIiBmaWxsPSIjNzc3Nzc3Ii8+CjxwYXRoIGQ9Ik0xNy40OTAyIDMuNUwyMC41MDAxIDYuMTM0NSIgc3Ryb2tlPSIjRkYwMDNDIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPgo="
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone 14 Pro",
+      "price": 999,
+      "oldPrice": 1099,
+      "categoryId": 1,
+      "brand": "Apple",
+      "rating": 4.8,
+      "characteristics": {
+        "type": "Smartphone",
+        "screenSize": "6.1 inch",
+        "storage": "128GB",
+        "battery": "3200mAh",
+        "camera": "48MP Triple Camera"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/t/m/tm-dg-sbp-1105-sm-1957.png",
+      "description": "The latest iPhone with advanced features."
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S23",
+      "price": 899,
+      "oldPrice": 999,
+      "categoryId": 1,
+      "brand": "Samsung",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Smartphone",
+        "screenSize": "6.1 inch",
+        "storage": "256GB",
+        "battery": "3900mAh",
+        "camera": "50MP Triple Camera"
+      },
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8XznePQZcci6fq9Ie_7cy0XgTwjj3K0C1FJEc8RqpMArexCsDFmNLDHMbW-WKNP_quE4&usqp=CAU",
+      "description": "Premium Android experience with top-notch performance."
+    },
+    {
+      "id": 3,
+      "name": "OnePlus 11",
+      "price": 649,
+      "oldPrice": 749,
+      "categoryId": 1,
+      "brand": "OnePlus",
+      "rating": 4.5,
+      "characteristics": {
+        "type": "Smartphone",
+        "screenSize": "6.7 inch",
+        "storage": "256GB",
+        "battery": "5000mAh",
+        "camera": "50MP Triple Camera"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a252e3db3d11365dd1457895056a5f34/_/-/_-_2023-04-25t114204.528.png",
+      "description": "Powerful flagship with a smooth display."
+    },
+    {
+      "id": 4,
+      "name": "Google Pixel 7",
+      "price": 699,
+      "oldPrice": 799,
+      "categoryId": 1,
+      "brand": "Google",
+      "rating": 4.6,
+      "characteristics": {
+        "type": "Smartphone",
+        "screenSize": "6.3 inch",
+        "storage": "128GB",
+        "battery": "4355mAh",
+        "camera": "50MP Dual Camera"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/7879779a33419e181769bd71b84a871f/t/m/tm-dg-sbp-1105-sm-2566-01.png",
+      "description": "Clean Android experience with excellent cameras."
+    },
+    {
+      "id": 5,
+      "name": "Xiaomi Redmi Note 12",
+      "price": 299,
+      "oldPrice": 349,
+      "categoryId": 1,
+      "brand": "Xiaomi",
+      "rating": 4.4,
+      "characteristics": {
+        "type": "Smartphone",
+        "screenSize": "6.67 inch",
+        "storage": "128GB",
+        "battery": "5000mAh",
+        "camera": "108MP Quad Camera"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a252e3db3d11365dd1457895056a5f34/t/m/tm-dg-sbp-1105-sm-2258-1.png",
+      "description": "Affordable smartphone with high-end specs."
+    },
+    {
+      "id": 6,
+      "name": "Wireless Charging Pad",
+      "price": 49.99,
+      "oldPrice": 59.99,
+      "categoryId": 1,
+      "brand": "Samsung",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Accessory",
+        "compatibility": "iPhone, Samsung, and other Qi-enabled devices",
+        "chargingSpeed": "15W",
+        "color": "Black"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/8/0/800-7_1_1_1.jpg",
+      "description": "Fast wireless charger for quick and easy charging."
+    },
+    {
+      "id": 7,
+      "name": "Bluetooth Headphones",
+      "price": 89.99,
+      "oldPrice": 129.99,
+      "categoryId": 1,
+      "brand": "Apple",
+      "rating": 4.8,
+      "characteristics": {
+        "type": "Accessory",
+        "connectivity": "Bluetooth",
+        "battery": "20 hours of playtime",
+        "noiseCancellation": "Active Noise Cancelling"
+      },
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtjUOTDCRVKjXWVuDzIiutlazhrkAfmSm6fg&s",
+      "description": "Comfortable headphones with excellent sound quality."
+    },
+    {
+      "id": 8,
+      "name": "Phone Case for iPhone 14",
+      "price": 19.99,
+      "oldPrice": 29.99,
+      "categoryId": 1,
+      "brand": "Apple",
+      "rating": 4.6,
+      "characteristics": {
+        "type": "Accessory",
+        "material": "TPU (Thermoplastic Polyurethane)",
+        "color": "Matte Black",
+        "features": "Shock-Absorbent, Slim Design"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/c/1/c1.png",
+      "description": "Durable, slim, and stylish phone case for iPhone 14."
+    },
+    {
+      "id": 9,
+      "name": "Portable Power Bank",
+      "price": 39.99,
+      "oldPrice": 49.99,
+      "categoryId": 1,
+      "brand": "Samsung",
+      "rating": 4.8,
+      "characteristics": {
+        "type": "Accessory",
+        "capacity": "10,000mAh",
+        "ports": "2 USB-A, 1 USB-C",
+        "chargingSpeed": "18W Fast Charging"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a252e3db3d11365dd1457895056a5f34/_/5/_57__10.png",
+      "description": "Compact power bank with fast-charging capabilities."
+    },
+    {
+      "id": 10,
+      "name": "Smartwatch Strap (Leather)",
+      "price": 29.99,
+      "oldPrice": 39.99,
+      "categoryId": 1,
+      "brand": "Apple",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Accessory",
+        "material": "Genuine Leather",
+        "color": "Brown",
+        "compatibility": "Apple Watch, Samsung Galaxy Watch"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/n/e/new_project_-_2023-01-13t225336.030.png",
+      "description": "Premium leather strap for a comfortable and stylish look."
+    },
+    {
+      "id": 11,
+      "name": "Apple Watch Series 8",
+      "price": 399,
+      "oldPrice": 449,
+      "categoryId": 2,
+      "brand": "Apple",
+      "rating": 4.8,
+      "characteristics": {
+        "type": "Smartwatch",
+        "screenSize": "1.9 inch",
+        "batteryLife": "18 hours",
+        "features": "ECG, Blood Oxygen, Fitness Tracking"
+      },
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQveXHUQwiYSTN4_Kgh5FVc_5jb05HQIsRTWw&s",
+      "description": "Advanced smartwatch with health and fitness features."
+    },
+    {
+      "id": 12,
+      "name": "Samsung Galaxy Watch 6",
+      "price": 299,
+      "oldPrice": 349,
+      "categoryId": 2,
+      "brand": "Samsung",
+      "rating": 4.6,
+      "characteristics": {
+        "type": "Smartwatch",
+        "screenSize": "1.4 inch",
+        "batteryLife": "50 hours",
+        "features": "Sleep Tracking, Fitness, Heart Rate"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/n/e/new_project_-_2023-08-22t082341.963.png",
+      "description": "Stylish smartwatch with a durable design."
+    },
+    {
+      "id": 13,
+      "name": "Samsung Galaxy Watch 5",
+      "price": 229,
+      "oldPrice": 279,
+      "categoryId": 2,
+      "brand": "Samsung",
+      "rating": 4.5,
+      "characteristics": {
+        "type": "Smartwatch",
+        "screenSize": "1.58 inch",
+        "batteryLife": "6 days",
+        "features": "Fitness Tracking, GPS, Water-Resistant"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/t/m/tm-dg-smw-1106-sw-0235.png",
+      "description": "Perfect companion for health and fitness enthusiasts."
+    },
+    {
+      "id": 14,
+      "name": "Apple Watch SE 2",
+      "price": 699,
+      "oldPrice": 749,
+      "categoryId": 2,
+      "brand": "Apple",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Smartwatch",
+        "screenSize": "1.3 inch",
+        "batteryLife": "14 days",
+        "features": "GPS, Multisport Tracking, Solar Charging"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/k/o/kontakt-home-2022-09-21t085347.034_png_1_.png",
+      "description": "Premium multisport GPS watch for outdoor activities."
+    },
+    {
+      "id": 15,
+      "name": "Huawei Watch GT 3",
+      "price": 229,
+      "oldPrice": 279,
+      "categoryId": 2,
+      "brand": "Huawei",
+      "rating": 4.4,
+      "characteristics": {
+        "type": "Smartwatch",
+        "screenSize": "1.43 inch",
+        "batteryLife": "14 days",
+        "features": "Health Tracking, AMOLED Display"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a252e3db3d11365dd1457895056a5f34/t/m/tm-dg-smw-1106-sw-0218.png",
+      "description": "Long battery life with stylish design."
+    },
+    {
+      "id": 16,
+      "name": "Apple Watch Ultra 2",
+      "price": 199,
+      "oldPrice": 229,
+      "categoryId": 2,
+      "brand": "Apple",
+      "rating": 4.2,
+      "characteristics": {
+        "type": "Smartwatch",
+        "screenSize": "1.75 inch",
+        "batteryLife": "8 days",
+        "features": "Sleep Monitoring, GPS, Fitness"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/7879779a33419e181769bd71b84a871f/t/m/tm-dg-smw-1106-sw-0348.png",
+      "description": "Affordable smartwatch with a large display."
+    },
+    {
+      "id": 17,
+      "name": "Bluetooth Smart Earbuds",
+      "price": 129,
+      "oldPrice": 179,
+      "categoryId": 2,
+      "brand": "JBL",
+      "rating": 4.6,
+      "characteristics": {
+        "type": "Smart Gadget",
+        "connectivity": "Bluetooth 5.0",
+        "batteryLife": "8 hours",
+        "features": "Noise Cancellation, Touch Controls, Waterproof"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a252e3db3d11365dd1457895056a5f34/t/m/tm-dg-acs-1109-tw-0373.png",
+      "description": "High-quality sound with active noise cancellation."
+    },
+    {
+      "id": 18,
+      "name": "Smart Home Security Camera",
+      "price": 119,
+      "oldPrice": 149,
+      "categoryId": 2,
+      "brand": "Xiaomi",
+      "rating": 4.5,
+      "characteristics": {
+        "type": "Smart Gadget",
+        "resolution": "1080p",
+        "batteryLife": "6 months",
+        "features": "Motion Detection, Night Vision, Two-Way Audio"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/7879779a33419e181769bd71b84a871f/0/0/0048019_1.jpg",
+      "description": "Monitor your home with HD video and two-way audio."
+    },
+    {
+      "id": 19,
+      "name": "JBL Earbuds",
+      "price": 129.99,
+      "oldPrice": 149.99,
+      "categoryId": 2,
+      "brand": "JBL",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Smart Gadget",
+        "screenSize": "8 inch",
+        "batteryLife": "N/A (Plug-In)",
+        "features": "Alexa, Video Calling, Smart Home Integration"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/_/7/_74__6_1.png",
+      "description": "Smart display with Alexa to control your smart home."
+    },
+    {
+      "id": 20,
+      "name": "Smart Outdoor Security Camera",
+      "price": 119,
+      "oldPrice": 129,
+      "categoryId": 2,
+      "brand": "Xiaomi",
+      "rating": 4.8,
+      "characteristics": {
+        "type": "Smart Gadget",
+        "temperatureControl": "Range: 60-80°F",
+        "batteryLife": "5 years",
+        "features": "Energy Saving, Wi-Fi, Voice Control"
+      },
+      "imageUrl": "https://www.mihome.az/wp-content/uploads/2019/04/Yi-outdoor-camera.jpg",
+      "description": "Smart thermostat that adapts to your schedule."
+    },
+    {
+      "id": 21,
+      "name": "Apple MacBook Pro 14",
+      "price": 1999,
+      "oldPrice": 2199,
+      "categoryId": 3,
+      "brand": "Apple",
+      "rating": 4.9,
+      "characteristics": {
+        "type": "Laptop",
+        "processor": "M2 Pro",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "screenSize": "14.2 inch"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/t/m/tm-dg-kot-1114-nb-1839-1.png",
+      "description": "Powerful notebook for professionals."
+    },
+    {
+      "id": 22,
+      "name": "Dell XPS 13 Plus",
+      "price": 1599,
+      "oldPrice": 1699,
+      "categoryId": 3,
+      "brand": "Dell",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Laptop",
+        "processor": "Intel Core i7",
+        "ram": "16GB",
+        "storage": "1TB SSD",
+        "screenSize": "13.4 inch"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/0/0/0047628_1.jpg",
+      "description": "Compact laptop with edge-to-edge display."
+    },
+    {
+      "id": 23,
+      "name": "Apple MacBook Pro Air 13",
+      "price": 1299,
+      "oldPrice": 1399,
+      "categoryId": 3,
+      "brand": "Apple",
+      "rating": 4.6,
+      "characteristics": {
+        "type": "Laptop",
+        "ram": "8GB",
+        "storage": "256GB SSD",
+        "screenSize": "13 inch"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/t/m/tm-dg-kot-1114-nb-0142_1.png",
+      "description": "Versatile 2-in-1 tablet with laptop functionality."
+    },
+    {
+      "id": 24,
+      "name": "Samsung Galaxy Tab S9 Ultra",
+      "price": 999,
+      "oldPrice": 1199,
+      "categoryId": 3,
+      "brand": "Samsung",
+      "rating": 4.5,
+      "characteristics": {
+        "type": "Tablet",
+        "processor": "Intel Core i7",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "screenSize": "14 inch"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/1/_/1_30__10_1.png",
+      "description": "Slim and lightweight convertible laptop."
+    },
+    {
+      "id": 25,
+      "name": "Samsung Galaxy Tab S8",
+      "price": 749,
+      "oldPrice": 799,
+      "categoryId": 3,
+      "brand": "Samsung",
+      "rating": 4.6,
+      "characteristics": {
+        "type": "Tablet",
+        "processor": "Snapdragon 8 Gen 1",
+        "ram": "8GB",
+        "storage": "256GB",
+        "screenSize": "11 inch"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/n/e/new_project_-_2022-05-11t233456.777.png",
+      "description": "Premium Android tablet with high performance."
+    },
+    {
+      "id": 26,
+      "name": "HP Spectre x360",
+      "price": 1399,
+      "oldPrice": 1499,
+      "categoryId": 3,
+      "brand": "HP",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Laptop",
+        "processor": "Intel Core i7",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "screenSize": "13.5 inch"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/t/m/tm-dg-kot-1114-nb-1961_1.png",
+      "description": "Elegant and powerful 2-in-1 convertible laptop."
+    },
+    {
+      "id": 27,
+      "name": "Dell Inspiron 14",
+      "price": 1999,
+      "oldPrice": 2199,
+      "categoryId": 3,
+      "brand": "Dell",
+      "rating": 4.8,
+      "characteristics": {
+        "type": "Laptop",
+        "processor": "Intel Core i9",
+        "ram": "16GB",
+        "storage": "1TB SSD",
+        "screenSize": "13.4 inch"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/d/e/dell_inspiron_14_5482__cn54805_.jpg",
+      "description": "Gaming tablet with a detachable keyboard."
+    },
+    {
+      "id": 28,
+      "name": "IPad Pro 4",
+      "price": 799,
+      "oldPrice": 849,
+      "categoryId": 3,
+      "brand": "Apple",
+      "rating": 4.5,
+      "characteristics": {
+        "type": "Tablet",
+        "processor": "Tensor G2",
+        "ram": "8GB",
+        "storage": "128GB",
+        "screenSize": "10.9 inch"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/2/0/200324150013989299.jpg",
+      "description": "Smart Android tablet with Pixel features."
+    },
+    {
+      "id": 29,
+      "name": "Notebook HP 15",
+      "price": 849,
+      "oldPrice": 949,
+      "categoryId": 3,
+      "brand": "HP",
+      "rating": 4.4,
+      "characteristics": {
+        "type": "Laptop",
+        "processor": "AMD Ryzen 7",
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "screenSize": "14 inch"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/n/e/new_project_-_2023-04-28t114007.950.png",
+      "description": "Affordable notebook with great performance."
+    },
+    {
+      "id": 30,
+      "name": "Samsung Galaxy Tab A9+",
+      "price": 1499,
+      "oldPrice": 1599,
+      "categoryId": 3,
+      "brand": "Samsung",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Tablet",
+        "processor": "AMD Ryzen 9",
+        "ram": "16GB",
+        "storage": "1TB SSD",
+        "screenSize": "16 inch"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/t/m/tm-dg-tbq-1105-tb-0456_2_.jpg",
+      "description": "High-performance laptop for gaming and work."
+    },
+    {
+      "id": 31,
+      "name": "Notebook Asus TUF A15",
+      "price": 2499,
+      "oldPrice": 2699,
+      "categoryId": 4,
+      "brand": "Asus",
+      "rating": 4.8,
+      "characteristics": {
+        "type": "Gaming Laptop",
+        "processor": "Intel Core i9",
+        "ram": "32GB",
+        "storage": "1TB SSD + 2TB HDD",
+        "graphicsCard": "NVIDIA GeForce RTX 4090"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/t/m/tm-dg-kot-1114-nb-2484_1.png",
+      "description": "High-end gaming desktop."
+    },
+    {
+      "id": 32,
+      "name": "Asus ROG Strix G15",
+      "price": 1899,
+      "oldPrice": 1999,
+      "categoryId": 4,
+      "brand": "Asus",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Gaming Laptop",
+        "processor": "AMD Ryzen 7",
+        "ram": "16GB",
+        "storage": "1TB SSD",
+        "graphicsCard": "NVIDIA GeForce RTX 3070"
+      },
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa4K_iqkbu9dZBmaoczZHV2Dwou39bWwIkjA&s",
+      "description": "Portable and powerful gaming laptop."
+    },
+    {
+      "id": 33,
+      "name": "Monitor Asus VG27WQ1B Gaming",
+      "price": 199,
+      "oldPrice": 229,
+      "categoryId": 4,
+      "brand": "Asus",
+      "rating": 4.8,
+      "characteristics": {
+        "type": "Gaming Monitor",
+        "batteryLife": "24 hours",
+        "soundTechnology": "THX Spatial Audio"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/7879779a33419e181769bd71b84a871f/n/e/new_project_-_2023-01-27t154311.132_1_.png",
+      "description": "Immersive gaming audio experience."
+    },
+    {
+      "id": 34,
+      "name": "Logitech G Pro Wireless",
+      "price": 199,
+      "oldPrice": 229,
+      "categoryId": 4,
+      "brand": "Logitech",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Gaming Mouse",
+        "dpi": "25600",
+        "connectivity": "Wireless"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a252e3db3d11365dd1457895056a5f34/t/m/tm-dg-acs-1109-mo-0455_2.png",
+      "description": "Precise and lightweight gaming mouse."
+    },
+    {
+      "id": 35,
+      "name": "Logitech G102",
+      "price": 129,
+      "oldPrice": 149,
+      "categoryId": 4,
+      "brand": "Logitech",
+      "rating": 4.8,
+      "characteristics": {
+        "type": "Gaming Mouse",
+        "switchType": "Cherry MX Speed",
+        "lighting": "RGB"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a252e3db3d11365dd1457895056a5f34/0/0/0036954_1.jpg",
+      "description": "High-performance gaming keyboard."
+    },
+    {
+      "id": 36,
+      "name": "SteelSeries QcK Prism",
+      "price": 59,
+      "oldPrice": 69,
+      "categoryId": 4,
+      "brand": "LG",
+      "rating": 4.6,
+      "characteristics": {
+        "type": "Gaming Monitor",
+        "dpi": "22600",
+        "connectivity": "Wireless"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/t/m/tm-dg-kot-1114-mr-0311_1.png",
+      "description": "Smooth and vibrant gaming surface."
+    },
+    {
+      "id": 37,
+      "name": "MSI Optix MAG342CQR",
+      "price": 499,
+      "oldPrice": 549,
+      "categoryId": 4,
+      "brand": "MSI",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Gaming Monitor",
+        "screenSize": "34 inch",
+        "resolution": "3440x1440",
+        "refreshRate": "144Hz"
+      },
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVNluojBD_UoCqgTpk6ATq2H5Cr8ekulL3gQ&s",
+      "description": "Ultra-wide gaming monitor with vivid colors."
+    },
+    {
+      "id": 38,
+      "name": "Notebook Asus TUF Gaming FX507VU4-LP058",
+      "price": 99,
+      "oldPrice": 119,
+      "categoryId": 4,
+      "brand": "Asus",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Gaming Laptop",
+        "connectivity": "Wired",
+        "soundTechnology": "7.1 Surround Sound"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/t/m/tm-dg-kot-1114-nb-2462.png",
+      "description": "Comfortable and immersive audio."
+    },
+    {
+      "id": 39,
+      "name": "Gaming Keyboard Logitech G Pro Wired",
+      "price": 149,
+      "oldPrice": 169,
+      "categoryId": 4,
+      "brand": "Logitech",
+      "rating": 4.8,
+      "characteristics": {
+        "type": "Gaming Keyborad",
+        "buttons": "15 customizable keys",
+        "compatibility": "Windows & Mac"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a252e3db3d11365dd1457895056a5f34/_/d/_d0_9d_d0_be_d0_b2_d1_8b_d0_b9-_d0_bf_d1_80_d0_be_d0_b5_d0_ba_d1_82-244_png_4.png",
+      "description": "Simplify streaming and multitasking."
+    },
+    {
+      "id": 40,
+      "name": "Gaming Keyboard Trust GXT833 Thado 23724",
+      "price": 299,
+      "oldPrice": 349,
+      "categoryId": 4,
+      "brand": "TRUST",
+      "rating": 4.8,
+      "characteristics": {
+        "type": "Gaming Keyborad",
+        "screenSize": "25 inch",
+        "resolution": "1920x1080",
+        "refreshRate": "360Hz"
+      },
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a252e3db3d11365dd1457895056a5f34/_/1/_1__923_1.png",
+      "description": "Super-fast gaming monitor for professionals."
+    },
+    {
+      "id": 41,
+      "name": "Samsung QN90A Neo QLED TV",
+      "price": 1499,
+      "oldPrice": 1699,
+      "categoryId": 5,
+      "brand": "Samsung",
+      "rating": 4.8,
+      "characteristics": {
+        "type": "TV",
+        "screenSize": "55 inch",
+        "resolution": "4K",
+        "smartFeatures": "Yes",
+        "displayType": "Neo QLED"
+      },
+      "imageUrl": "https://example.com/qn90a.jpg",
+      "description": "Crisp visuals and premium sound."
+    },
+    {
+      "id": 42,
+      "name": "LG CX OLED TV",
+      "price": 1299,
+      "oldPrice": 1499,
+      "categoryId": 5,
+      "brand": "LG",
+      "rating": 4.9,
+      "characteristics": {
+        "type": "TV",
+        "screenSize": "48 inch",
+        "resolution": "4K",
+        "smartFeatures": "Yes",
+        "displayType": "OLED"
+      },
+      "imageUrl": "https://example.com/cx-oled.jpg",
+      "description": "Exceptional contrast and vibrant colors."
+    },
+    {
+      "id": 43,
+      "name": "Sony HT-G700 Soundbar",
+      "price": 499,
+      "oldPrice": 549,
+      "categoryId": 5,
+      "brand": "Sony",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Soundbar",
+        "channels": "3.1",
+        "soundTechnology": "Dolby Atmos",
+        "connectivity": "Bluetooth, HDMI"
+      },
+      "imageUrl": "https://example.com/ht-g700.jpg",
+      "description": "Immersive surround sound for home theater."
+    },
+    {
+      "id": 44,
+      "name": "Bose QuietComfort 45",
+      "price": 299,
+      "oldPrice": 329,
+      "categoryId": 5,
+      "brand": "Bose",
+      "rating": 4.8,
+      "characteristics": {
+        "type": "Wireless Headphones",
+        "noiseCancellation": "Active",
+        "batteryLife": "24 hours"
+      },
+      "imageUrl": "https://example.com/qc45.jpg",
+      "description": "Comfortable headphones with superior audio quality."
+    },
+    {
+      "id": 45,
+      "name": "Sonos One (Gen 2)",
+      "price": 199,
+      "oldPrice": 229,
+      "categoryId": 5,
+      "brand": "Sonos",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Smart Speaker",
+        "voiceAssistant": "Alexa, Google Assistant",
+        "connectivity": "Wi-Fi, Bluetooth"
+      },
+      "imageUrl": "https://example.com/sonos-one.jpg",
+      "description": "Rich sound and smart home integration."
+    },
+    {
+      "id": 46,
+      "name": "JBL Flip 6",
+      "price": 129,
+      "oldPrice": 149,
+      "categoryId": 5,
+      "brand": "JBL",
+      "rating": 4.6,
+      "characteristics": {
+        "type": "Portable Bluetooth Speaker",
+        "waterResistance": "IP67",
+        "batteryLife": "12 hours"
+      },
+      "imageUrl": "https://example.com/flip6.jpg",
+      "description": "Durable speaker with powerful audio."
+    },
+    {
+      "id": 47,
+      "name": "Apple HomePod Mini",
+      "price": 99,
+      "oldPrice": 119,
+      "categoryId": 5,
+      "brand": "Apple",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Smart Speaker",
+        "voiceAssistant": "Siri",
+        "connectivity": "Wi-Fi"
+      },
+      "imageUrl": "https://example.com/homepod-mini.jpg",
+      "description": "Compact speaker with impressive sound."
+    },
+    {
+      "id": 48,
+      "name": "Pioneer DJ DM-40",
+      "price": 169,
+      "oldPrice": 199,
+      "categoryId": 5,
+      "brand": "Pioneer",
+      "rating": 4.8,
+      "characteristics": {
+        "type": "Desktop Monitor Speakers",
+        "connectivity": "RCA, AUX",
+        "frequencyRange": "70Hz - 30kHz"
+      },
+      "imageUrl": "https://example.com/dm40.jpg",
+      "description": "Perfect for music production and listening."
+    },
+    {
+      "id": 49,
+      "name": "Bang & Olufsen Beosound Stage",
+      "price": 1599,
+      "oldPrice": 1799,
+      "categoryId": 5,
+      "brand": "Bang & Olufsen",
+      "rating": 4.9,
+      "characteristics": {
+        "type": "Soundbar",
+        "soundTechnology": "Dolby Atmos",
+        "design": "Minimalist"
+      },
+      "imageUrl": "https://example.com/beosound.jpg",
+      "description": "Luxury soundbar with pristine sound quality."
+    },
+    {
+      "id": 50,
+      "name": "Roku Streambar",
+      "price": 129,
+      "oldPrice": 149,
+      "categoryId": 5,
+      "brand": "Roku",
+      "rating": 4.6,
+      "characteristics": {
+        "type": "Soundbar and Streaming Device",
+        "resolution": "4K HDR",
+        "smartFeatures": "Built-in Roku OS"
+      },
+      "imageUrl": "https://example.com/streambar.jpg",
+      "description": "Affordable all-in-one streaming and sound solution."
+    },
+    {
+      "id": 51,
+      "name": "Air Fryer",
+      "price": 129.99,
+      "oldPrice": 159.99,
+      "categoryId": 6,
+      "brand": "Philips",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Air Fryer",
+        "capacity": "3.5 L",
+        "power": "1400 W",
+        "features": "Rapid Air Technology, Auto Shut-Off"
+      },
+      "imageUrl": "https://example.com/images/air-fryer.jpg",
+      "description": "A compact air fryer with rapid air technology for crispy results."
+    },
+    {
+      "id": 52,
+      "name": "Blender",
+      "price": 99.99,
+      "oldPrice": 119.99,
+      "categoryId": 6,
+      "brand": "Ninja",
+      "rating": 4.5,
+      "characteristics": {
+        "type": "Blender",
+        "capacity": "1.5 L",
+        "power": "1200 W",
+        "features": "Multiple Speed Settings, Dishwasher Safe"
+      },
+      "imageUrl": "https://example.com/images/blender.jpg",
+      "description": "High-power blender for smoothies and soups."
+    },
+    {
+      "id": 53,
+      "name": "Coffee Maker",
+      "price": 69.99,
+      "oldPrice": 89.99,
+      "categoryId": 6,
+      "brand": "Cuisinart",
+      "rating": 4.3,
+      "characteristics": {
+        "type": "Coffee Maker",
+        "capacity": "12 cups",
+        "power": "1000 W",
+        "features": "Programmable, Brew Pause"
+      },
+      "imageUrl": "https://example.com/images/coffee-maker.jpg",
+      "description": "Programmable coffee maker with a 12-cup capacity."
+    },
+    {
+      "id": 54,
+      "name": "Electric Kettle",
+      "price": 39.99,
+      "oldPrice": 49.99,
+      "categoryId": 6,
+      "brand": "Hamilton Beach",
+      "rating": 4.2,
+      "characteristics": {
+        "type": "Electric Kettle",
+        "capacity": "1.7 L",
+        "power": "1500 W",
+        "features": "Auto Shut-Off, Cord-Free"
+      },
+      "imageUrl": "https://example.com/images/electric-kettle.jpg",
+      "description": "Cordless electric kettle with auto shut-off feature."
+    },
+    {
+      "id": 55,
+      "name": "Stand Mixer",
+      "price": 249.99,
+      "oldPrice": 299.99,
+      "categoryId": 6,
+      "brand": "KitchenAid",
+      "rating": 4.8,
+      "characteristics": {
+        "type": "Stand Mixer",
+        "capacity": "4.5 qt",
+        "power": "300 W",
+        "features": "Multiple Speed Settings, Dishwasher Safe"
+      },
+      "imageUrl": "https://example.com/images/stand-mixer.jpg",
+      "description": "Powerful stand mixer for all your baking needs."
+    },
+    {
+      "id": 56,
+      "name": "Microwave Oven",
+      "price": 89.99,
+      "oldPrice": 109.99,
+      "categoryId": 6,
+      "brand": "Sharp",
+      "rating": 4.4,
+      "characteristics": {
+        "type": "Microwave Oven",
+        "capacity": "1.1 cu. ft.",
+        "power": "1000 W",
+        "features": "Auto Cook, Defrost"
+      },
+      "imageUrl": "https://example.com/images/microwave-oven.jpg",
+      "description": "Compact microwave with auto-cook and defrost settings."
+    },
+    {
+      "id": 57,
+      "name": "Juicer",
+      "price": 69.99,
+      "oldPrice": 79.99,
+      "categoryId": 6,
+      "brand": "Breville",
+      "rating": 4.6,
+      "characteristics": {
+        "type": "Juicer",
+        "capacity": "1 L",
+        "power": "900 W",
+        "features": "Cold Spin Technology, Dishwasher Safe"
+      },
+      "imageUrl": "https://example.com/images/juicer.jpg",
+      "description": "Efficient juicer with cold spin technology for fresh juice."
+    },
+    {
+      "id": 58,
+      "name": "Toaster",
+      "price": 29.99,
+      "oldPrice": 39.99,
+      "categoryId": 6,
+      "brand": "Black+Decker",
+      "rating": 4,
+      "characteristics": {
+        "type": "Toaster",
+        "capacity": "2 slices",
+        "features": "Extra Wide Slots, Auto Pop-Up"
+      },
+      "imageUrl": "https://example.com/images/toaster.jpg",
+      "description": "Classic 2-slice toaster with extra wide slots."
+    },
+    {
+      "id": 59,
+      "name": "Induction Cooktop",
+      "price": 129.99,
+      "oldPrice": 159.99,
+      "categoryId": 6,
+      "brand": "Duxtop",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Induction Cooktop",
+        "power": "1800 W",
+        "features": "Portable, Adjustable Temperature"
+      },
+      "imageUrl": "https://example.com/images/induction-cooktop.jpg",
+      "description": "Portable induction cooktop with adjustable heat settings."
+    },
+    {
+      "id": 60,
+      "name": "Rice Cooker",
+      "price": 49.99,
+      "oldPrice": 59.99,
+      "categoryId": 6,
+      "brand": "Zojirushi",
+      "rating": 4.9,
+      "characteristics": {
+        "type": "Rice Cooker",
+        "capacity": "1 liter",
+        "features": "Keep Warm Function, Easy Clean"
+      },
+      "imageUrl": "https://example.com/images/rice-cooker.jpg",
+      "description": "Reliable rice cooker with keep warm function."
+    },
+    {
+      "id": 61,
+      "name": "Smart TV",
+      "price": 599.99,
+      "oldPrice": 699.99,
+      "categoryId": 7,
+      "brand": "Samsung",
+      "rating": 4.8,
+      "characteristics": {
+        "type": "Smart TV",
+        "size": "55 inches",
+        "resolution": "4K",
+        "features": "HDR, Wi-Fi Connectivity"
+      },
+      "imageUrl": "https://example.com/images/smart-tv.jpg",
+      "description": "55-inch 4K UHD Smart TV with HDR support."
+    },
+    {
+      "id": 62,
+      "name": "Bluetooth Speaker",
+      "price": 49.99,
+      "oldPrice": 69.99,
+      "categoryId": 7,
+      "brand": "JBL",
+      "rating": 4.5,
+      "characteristics": {
+        "type": "Bluetooth Speaker",
+        "power": "10 W",
+        "features": "Waterproof, 12-Hour Battery Life"
+      },
+      "imageUrl": "https://example.com/images/bluetooth-speaker.jpg",
+      "description": "Portable Bluetooth speaker with 12 hours of battery life."
+    },
+    {
+      "id": 63,
+      "name": "Wireless Earbuds",
+      "price": 89.99,
+      "oldPrice": 109.99,
+      "categoryId": 7,
+      "brand": "Apple",
+      "rating": 4.6,
+      "characteristics": {
+        "type": "Earbuds",
+        "batteryLife": "5 hours",
+        "features": "Noise Cancellation, Sweat-Resistant"
+      },
+      "imageUrl": "https://example.com/images/earbuds.jpg",
+      "description": "Wireless earbuds with active noise cancellation."
+    },
+    {
+      "id": 64,
+      "name": "Soundbar",
+      "price": 129.99,
+      "oldPrice": 159.99,
+      "categoryId": 7,
+      "brand": "Bose",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Soundbar",
+        "size": "32 inches",
+        "features": "Bluetooth, Wall Mountable"
+      },
+      "imageUrl": "https://example.com/images/soundbar.jpg",
+      "description": "Compact soundbar with Bluetooth and wall-mounting capability."
+    },
+    {
+      "id": 65,
+      "name": "Robot Vacuum",
+      "price": 199.99,
+      "oldPrice": 249.99,
+      "categoryId": 7,
+      "brand": "iRobot",
+      "rating": 4.3,
+      "characteristics": {
+        "type": "Robot Vacuum",
+        "batteryLife": "90 minutes",
+        "features": "Smart Mapping, Wi-Fi Control"
+      },
+      "imageUrl": "https://example.com/images/robot-vacuum.jpg",
+      "description": "Smart robot vacuum with Wi-Fi control and smart mapping."
+    },
+    {
+      "id": 66,
+      "name": "4K Streaming Stick",
+      "price": 39.99,
+      "oldPrice": 49.99,
+      "categoryId": 7,
+      "brand": "Amazon",
+      "rating": 4.6,
+      "characteristics": {
+        "type": "Streaming Stick",
+        "resolution": "4K",
+        "features": "Alexa Voice Remote, Dolby Atmos"
+      },
+      "imageUrl": "https://example.com/images/streaming-stick.jpg",
+      "description": "4K streaming stick with Alexa Voice Remote."
+    },
+    {
+      "id": 67,
+      "name": "Portable Air Conditioner",
+      "price": 249.99,
+      "oldPrice": 299.99,
+      "categoryId": 7,
+      "brand": "Honeywell",
+      "rating": 4.2,
+      "characteristics": {
+        "type": "Air Conditioner",
+        "capacity": "10,000 BTU",
+        "features": "Portable, Remote Control"
+      },
+      "imageUrl": "https://example.com/images/portable-ac.jpg",
+      "description": "Portable air conditioner with remote control and cooling power."
+    },
+    {
+      "id": 68,
+      "name": "Smart Thermostat",
+      "price": 149.99,
+      "oldPrice": 179.99,
+      "categoryId": 7,
+      "brand": "Nest",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Thermostat",
+        "features": "Wi-Fi Enabled, Energy Saving"
+      },
+      "imageUrl": "https://example.com/images/smart-thermostat.jpg",
+      "description": "Smart thermostat with Wi-Fi connectivity and energy-saving features."
+    },
+    {
+      "id": 69,
+      "name": "Cordless Drill",
+      "price": 79.99,
+      "oldPrice": 99.99,
+      "categoryId": 7,
+      "brand": "DeWalt",
+      "rating": 4.5,
+      "characteristics": {
+        "type": "Cordless Drill",
+        "battery": "20V",
+        "features": "Two-Speed Gearbox, LED Light"
+      },
+      "imageUrl": "https://example.com/images/cordless-drill.jpg",
+      "description": "Powerful cordless drill with two-speed gearbox and LED light."
+    },
+    {
+      "id": 70,
+      "name": "Electric Grill",
+      "price": 149.99,
+      "oldPrice": 179.99,
+      "categoryId": 7,
+      "brand": "George Foreman",
+      "rating": 4.4,
+      "characteristics": {
+        "type": "Electric Grill",
+        "size": "15 inches",
+        "features": "Non-Stick Surface, Adjustable Temperature"
+      },
+      "imageUrl": "https://example.com/images/electric-grill.jpg",
+      "description": "Electric grill with non-stick surface and adjustable temperature."
+    },
+    {
+      "id": 71,
+      "name": "Electric Guitar",
+      "price": 399.99,
+      "oldPrice": 499.99,
+      "categoryId": 8,
+      "brand": "Fender",
+      "rating": 4.8,
+      "characteristics": {
+        "type": "Electric Guitar",
+        "model": "Stratocaster",
+        "features": "Solid Body, Maple Neck, 3 Single-Coil Pickups"
+      },
+      "imageUrl": "https://example.com/images/electric-guitar.jpg",
+      "description": "A high-quality electric guitar with a classic Stratocaster design."
+    },
+    {
+      "id": 72,
+      "name": "Digital Camera",
+      "price": 799.99,
+      "oldPrice": 899.99,
+      "categoryId": 8,
+      "brand": "Canon",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Digital Camera",
+        "resolution": "24.1 MP",
+        "lens": "18-55mm",
+        "video": "4K"
+      },
+      "imageUrl": "https://example.com/images/digital-camera.jpg",
+      "description": "A DSLR camera for high-quality photography and video recording."
+    },
+    {
+      "id": 73,
+      "name": "Painting Set",
+      "price": 49.99,
+      "oldPrice": 59.99,
+      "categoryId": 8,
+      "brand": "Winsor & Newton",
+      "rating": 4.6,
+      "characteristics": {
+        "type": "Painting Set",
+        "contents": "Watercolors, Brushes, Palette, Paper",
+        "features": "Complete Set for Beginners"
+      },
+      "imageUrl": "https://example.com/images/painting-set.jpg",
+      "description": "A complete set for watercolor painting, perfect for beginners."
+    },
+    {
+      "id": 74,
+      "name": "Model Kit (Airplane)",
+      "price": 29.99,
+      "oldPrice": 39.99,
+      "categoryId": 8,
+      "brand": "Revell",
+      "rating": 4.3,
+      "characteristics": {
+        "type": "Model Kit",
+        "pieces": "200+ pieces",
+        "features": "Glue and Paint Included"
+      },
+      "imageUrl": "https://example.com/images/model-kit.jpg",
+      "description": "Build a detailed airplane model with this 200+ piece kit."
+    },
+    {
+      "id": 75,
+      "name": "Drone with Camera",
+      "price": 299.99,
+      "oldPrice": 359.99,
+      "categoryId": 8,
+      "brand": "DJI",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Drone",
+        "camera": "4K HD",
+        "flightTime": "30 minutes",
+        "features": "GPS, Auto Return, 4K Video"
+      },
+      "imageUrl": "https://example.com/images/drone.jpg",
+      "description": "A drone with 4K HD camera for aerial photography and video."
+    },
+    {
+      "id": 76,
+      "name": "Chess Set",
+      "price": 39.99,
+      "oldPrice": 49.99,
+      "categoryId": 8,
+      "brand": "Staunton",
+      "rating": 4.5,
+      "characteristics": {
+        "type": "Chess Set",
+        "material": "Wood",
+        "boardSize": "15 inches",
+        "features": "Handcrafted, Tournament Style"
+      },
+      "imageUrl": "https://example.com/images/chess-set.jpg",
+      "description": "A handcrafted wooden chess set, perfect for players of all levels."
+    },
+    {
+      "id": 77,
+      "name": "Yoga Mat",
+      "price": 19.99,
+      "oldPrice": 24.99,
+      "categoryId": 8,
+      "brand": "Gaiam",
+      "rating": 4.6,
+      "characteristics": {
+        "type": "Yoga Mat",
+        "material": "PVC",
+        "thickness": "1/4 inch",
+        "features": "Non-Slip, Lightweight"
+      },
+      "imageUrl": "https://example.com/images/yoga-mat.jpg",
+      "description": "Durable and non-slip yoga mat for a comfortable practice."
+    },
+    {
+      "id": 78,
+      "name": "Piano Keyboard",
+      "price": 169.99,
+      "oldPrice": 199.99,
+      "categoryId": 8,
+      "brand": "Yamaha",
+      "rating": 4.8,
+      "characteristics": {
+        "type": "Piano Keyboard",
+        "keys": "61",
+        "features": "Touch Sensitivity, Multiple Sound Modes"
+      },
+      "imageUrl": "https://example.com/images/piano-keyboard.jpg",
+      "description": "A 61-key piano keyboard with touch sensitivity and built-in sounds."
+    },
+    {
+      "id": 79,
+      "name": "Camera Tripod",
+      "price": 49.99,
+      "oldPrice": 69.99,
+      "categoryId": 8,
+      "brand": "Manfrotto",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Tripod",
+        "material": "Aluminum",
+        "height": "60 inches",
+        "features": "Adjustable Legs, Quick Release Plate"
+      },
+      "imageUrl": "https://example.com/images/camera-tripod.jpg",
+      "description": "A sturdy aluminum tripod with adjustable legs and quick-release plate."
+    },
+    {
+      "id": 80,
+      "name": "Guitar Amplifier",
+      "price": 199.99,
+      "oldPrice": 249.99,
+      "categoryId": 8,
+      "brand": "Marshall",
+      "rating": 4.5,
+      "characteristics": {
+        "type": "Guitar Amplifier",
+        "power": "50W",
+        "features": "Built-in Effects, Bluetooth Connectivity"
+      },
+      "imageUrl": "https://example.com/images/guitar-amplifier.jpg",
+      "description": "A 50W guitar amplifier with built-in effects and Bluetooth connectivity."
+    },
+    {
+      "id": 81,
+      "name": "Sofa",
+      "price": 499.99,
+      "oldPrice": 699.99,
+      "categoryId": 9,
+      "brand": "Ikea",
+      "rating": 4.6,
+      "characteristics": {
+        "type": "Sofa",
+        "material": "Leather",
+        "color": "Gray",
+        "features": "Removable Cushions, Adjustable Armrests"
+      },
+      "imageUrl": "https://example.com/images/sofa.jpg",
+      "description": "A comfortable leather sofa with adjustable armrests."
+    },
+    {
+      "id": 82,
+      "name": "Dining Table",
+      "price": 299.99,
+      "oldPrice": 399.99,
+      "categoryId": 9,
+      "brand": "Wayfair",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Dining Table",
+        "material": "Wood",
+        "size": "60 x 40 inches",
+        "features": "Assembly Required"
+      },
+      "imageUrl": "https://example.com/images/dining-table.jpg",
+      "description": "Wooden dining table perfect for family meals and gatherings."
+    },
+    {
+      "id": 83,
+      "name": "Office Chair",
+      "price": 119.99,
+      "oldPrice": 159.99,
+      "categoryId": 9,
+      "brand": "Herman Miller",
+      "rating": 4.8,
+      "characteristics": {
+        "type": "Office Chair",
+        "material": "Mesh",
+        "features": "Adjustable Height, Lumbar Support"
+      },
+      "imageUrl": "https://example.com/images/office-chair.jpg",
+      "description": "Ergonomic office chair with lumbar support and adjustable height."
+    },
+    {
+      "id": 84,
+      "name": "Bookshelf",
+      "price": 79.99,
+      "oldPrice": 99.99,
+      "categoryId": 9,
+      "brand": "Sauder",
+      "rating": 4.4,
+      "characteristics": {
+        "type": "Bookshelf",
+        "material": "Wood",
+        "size": "36 inches",
+        "features": "5 Shelves, Easy Assembly"
+      },
+      "imageUrl": "https://example.com/images/bookshelf.jpg",
+      "description": "A 5-shelf bookshelf for organizing books and decorative items."
+    },
+    {
+      "id": 85,
+      "name": "Queen Bed Frame",
+      "price": 249.99,
+      "oldPrice": 299.99,
+      "categoryId": 9,
+      "brand": "Zinus",
+      "rating": 4.5,
+      "characteristics": {
+        "type": "Bed Frame",
+        "material": "Metal",
+        "size": "Queen",
+        "features": "No Box Spring Required"
+      },
+      "imageUrl": "https://example.com/images/queen-bed-frame.jpg",
+      "description": "Metal bed frame with sturdy construction and no box spring required."
+    },
+    {
+      "id": 86,
+      "name": "Coffee Table",
+      "price": 129.99,
+      "oldPrice": 169.99,
+      "categoryId": 9,
+      "brand": "West Elm",
+      "rating": 4.6,
+      "characteristics": {
+        "type": "Coffee Table",
+        "material": "Wood and Glass",
+        "size": "42 x 24 inches",
+        "features": "Modern Design, Easy to Clean"
+      },
+      "imageUrl": "https://example.com/images/coffee-table.jpg",
+      "description": "Stylish coffee table made of wood and glass with modern design."
+    },
+    {
+      "id": 87,
+      "name": "Nightstand",
+      "price": 89.99,
+      "oldPrice": 109.99,
+      "categoryId": 9,
+      "brand": "Target",
+      "rating": 4.4,
+      "characteristics": {
+        "type": "Nightstand",
+        "material": "Wood",
+        "features": "2 Drawers, Easy Assembly"
+      },
+      "imageUrl": "https://example.com/images/nightstand.jpg",
+      "description": "Nightstand with 2 drawers for additional storage."
+    },
+    {
+      "id": 88,
+      "name": "Recliner Chair",
+      "price": 359.99,
+      "oldPrice": 459.99,
+      "categoryId": 9,
+      "brand": "La-Z-Boy",
+      "rating": 4.9,
+      "characteristics": {
+        "type": "Recliner Chair",
+        "material": "Leather",
+        "features": "Manual Recline, Cup Holder"
+      },
+      "imageUrl": "https://example.com/images/recliner-chair.jpg",
+      "description": "Luxurious leather recliner chair with manual recline and cup holder."
+    },
+    {
+      "id": 89,
+      "name": "TV Stand",
+      "price": 179.99,
+      "oldPrice": 229.99,
+      "categoryId": 9,
+      "brand": "Best Buy",
+      "rating": 4.5,
+      "characteristics": {
+        "type": "TV Stand",
+        "material": "Wood and Metal",
+        "size": "55 inches",
+        "features": "Cable Management, Easy Assembly"
+      },
+      "imageUrl": "https://example.com/images/tv-stand.jpg",
+      "description": "TV stand made of wood and metal with cable management system."
+    },
+    {
+      "id": 90,
+      "name": "Storage Bench",
+      "price": 99.99,
+      "oldPrice": 139.99,
+      "categoryId": 9,
+      "brand": "Wayfair",
+      "rating": 4.4,
+      "characteristics": {
+        "type": "Storage Bench",
+        "material": "Fabric",
+        "size": "48 inches",
+        "features": "Upholstered, Hidden Storage"
+      },
+      "imageUrl": "https://example.com/images/storage-bench.jpg",
+      "description": "Upholstered storage bench with hidden compartment for extra storage."
+    },
+    {
+      "id": 91,
+      "name": "Lawn Mower",
+      "price": 229.99,
+      "oldPrice": 299.99,
+      "categoryId": 10,
+      "brand": "Honda",
+      "rating": 4.6,
+      "characteristics": {
+        "type": "Lawn Mower",
+        "engine": "4-Stroke",
+        "features": "Self-Propelled, 21-inch Cutting Width"
+      },
+      "imageUrl": "https://example.com/images/lawn-mower.jpg",
+      "description": "Self-propelled lawn mower with a powerful 4-stroke engine."
+    },
+    {
+      "id": 92,
+      "name": "Patio Set",
+      "price": 349.99,
+      "oldPrice": 429.99,
+      "categoryId": 10,
+      "brand": "Lowe's",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Patio Set",
+        "material": "Wicker",
+        "pieces": "4",
+        "features": "Cushioned Seats, Weather Resistant"
+      },
+      "imageUrl": "https://example.com/images/patio-set.jpg",
+      "description": "Comfortable outdoor patio set made of wicker with cushioned seating."
+    },
+    {
+      "id": 93,
+      "name": "Outdoor Fire Pit",
+      "price": 199.99,
+      "oldPrice": 259.99,
+      "categoryId": 10,
+      "brand": "Solo Stove",
+      "rating": 4.8,
+      "characteristics": {
+        "type": "Fire Pit",
+        "material": "Steel",
+        "diameter": "24 inches",
+        "features": "Portable, Smoke-Free"
+      },
+      "imageUrl": "https://example.com/images/fire-pit.jpg",
+      "description": "Portable, smoke-free fire pit for outdoor gatherings."
+    },
+    {
+      "id": 94,
+      "name": "Garden Hose",
+      "price": 29.99,
+      "oldPrice": 39.99,
+      "categoryId": 10,
+      "brand": "Flexzilla",
+      "rating": 4.5,
+      "characteristics": {
+        "type": "Garden Hose",
+        "length": "50 feet",
+        "material": "Flexible Polymer",
+        "features": "Lightweight, Kink-Resistant"
+      },
+      "imageUrl": "https://example.com/images/garden-hose.jpg",
+      "description": "Durable garden hose made of flexible polymer material."
+    },
+    {
+      "id": 95,
+      "name": "Outdoor Umbrella",
+      "price": 99.99,
+      "oldPrice": 129.99,
+      "categoryId": 10,
+      "brand": "Treasure Garden",
+      "rating": 4.4,
+      "characteristics": {
+        "type": "Umbrella",
+        "size": "10 feet",
+        "material": "Sunbrella Fabric",
+        "features": "Crank Lift, UV Protection"
+      },
+      "imageUrl": "https://example.com/images/outdoor-umbrella.jpg",
+      "description": "Large outdoor umbrella for shade with UV protection fabric."
+    },
+    {
+      "id": 96,
+      "name": "Garden Tool Set",
+      "price": 49.99,
+      "oldPrice": 59.99,
+      "categoryId": 10,
+      "brand": "Gardener's Supply",
+      "rating": 4.6,
+      "characteristics": {
+        "type": "Tool Set",
+        "tools": "Trowel, Pruners, Gloves",
+        "features": "Ergonomic, Rust-Resistant"
+      },
+      "imageUrl": "https://example.com/images/garden-tool-set.jpg",
+      "description": "Complete garden tool set for all your planting and pruning needs."
+    },
+    {
+      "id": 97,
+      "name": "Outdoor Bench",
+      "price": 139.99,
+      "oldPrice": 179.99,
+      "categoryId": 10,
+      "brand": "Amazon Basics",
+      "rating": 4.4,
+      "characteristics": {
+        "type": "Bench",
+        "material": "Wood",
+        "size": "48 inches",
+        "features": "Weather-Resistant, Slatted Design"
+      },
+      "imageUrl": "https://example.com/images/outdoor-bench.jpg",
+      "description": "A weather-resistant wooden bench for your garden or patio."
+    },
+    {
+      "id": 98,
+      "name": "Garden Path Lights",
+      "price": 29.99,
+      "oldPrice": 39.99,
+      "categoryId": 10,
+      "brand": "Ring",
+      "rating": 4.5,
+      "characteristics": {
+        "type": "Path Lights",
+        "material": "Stainless Steel",
+        "features": "Solar-Powered, LED"
+      },
+      "imageUrl": "https://example.com/images/garden-path-lights.jpg",
+      "description": "Solar-powered LED path lights for illuminating your garden."
+    },
+    {
+      "id": 99,
+      "name": "Lawn Aerator Shoes",
+      "price": 39.99,
+      "oldPrice": 49.99,
+      "categoryId": 10,
+      "brand": "Yard Butler",
+      "rating": 4.6,
+      "characteristics": {
+        "type": "Aerator Shoes",
+        "material": "Steel",
+        "size": "One Size Fits All",
+        "features": "Easy to Use, Durable"
+      },
+      "imageUrl": "https://example.com/images/aerator-shoes.jpg",
+      "description": "Aerator shoes for improving your lawn's health by promoting air flow."
+    },
+    {
+      "id": 100,
+      "name": "Garden Storage Shed",
+      "price": 499.99,
+      "oldPrice": 599.99,
+      "categoryId": 10,
+      "brand": "Suncast",
+      "rating": 4.7,
+      "characteristics": {
+        "type": "Storage Shed",
+        "material": "Resin",
+        "size": "7 x 7 feet",
+        "features": "Waterproof, Lockable"
+      },
+      "imageUrl": "https://example.com/images/storage-shed.jpg",
+      "description": "Durable resin garden storage shed for tools, equipment, and supplies."
+    }
+  ],
+  "users": [
+    {
+      "userName": "Fazil2",
+      "email": "fazil2@gmail.com",
+      "pwd": "1234567",
+      "id": 8
+    },
+    {
+      "userName": "ahmed",
+      "email": "ahmed@gmail.com",
+      "pwd": "7654321",
+      "id": 9
+    },
+    {
+      "userName": "Morgan Housel",
+      "email": "morgan@gmail.com",
+      "pwd": "666666",
+      "id": 10
+    }
+  ],
+  "basket": [
+    {
+      "userId": 9,
+      "prodId": 2,
+      "prodName": "Samsung Galaxy S23",
+      "prodPrice": 899,
+      "prodOldPrice": 999,
+      "prodImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8XznePQZcci6fq9Ie_7cy0XgTwjj3K0C1FJEc8RqpMArexCsDFmNLDHMbW-WKNP_quE4&usqp=CAU",
+      "id": 5
+    },
+    {
+      "userId": 9,
+      "prodId": 4,
+      "prodName": "Google Pixel 7",
+      "prodPrice": 699,
+      "prodOldPrice": 799,
+      "prodImg": "https://kontakt.az/media/catalog/product/cache/7879779a33419e181769bd71b84a871f/t/m/tm-dg-sbp-1105-sm-2566-01.png",
+      "id": 6
+    },
+    {
+      "userId": 8,
+      "prodId": 3,
+      "prodName": "OnePlus 11",
+      "prodPrice": 649,
+      "prodOldPrice": 749,
+      "prodImg": "https://kontakt.az/media/catalog/product/cache/a252e3db3d11365dd1457895056a5f34/_/-/_-_2023-04-25t114204.528.png",
+      "id": 7
+    },
+    {
+      "userId": 8,
+      "prodId": 1,
+      "prodName": "iPhone 14 Pro",
+      "prodPrice": 999,
+      "prodOldPrice": 1099,
+      "prodImg": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/t/m/tm-dg-sbp-1105-sm-1957.png",
+      "id": 9
+    },
+    {
+      "userId": 8,
+      "prodId": 2,
+      "prodName": "Samsung Galaxy S23",
+      "prodPrice": 899,
+      "prodOldPrice": 999,
+      "prodImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8XznePQZcci6fq9Ie_7cy0XgTwjj3K0C1FJEc8RqpMArexCsDFmNLDHMbW-WKNP_quE4&usqp=CAU",
+      "id": 10
+    },
+    {
+      "userId": 8,
+      "prodId": 32,
+      "prodName": "Asus ROG Strix G15",
+      "prodPrice": 1899,
+      "prodOldPrice": 1999,
+      "prodImg": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/N/e/New-Project-7-9.png",
+      "id": 11
+    },
+    {
+      "userId": 8,
+      "prodId": 45,
+      "prodName": "Sonos One (Gen 2)",
+      "prodPrice": 199,
+      "prodOldPrice": 229,
+      "prodImg": "https://example.com/sonos-one.jpg",
+      "id": 12
+    },
+    {
+      "userId": 10,
+      "prodId": 2,
+      "prodName": "Samsung Galaxy S23",
+      "prodPrice": 899,
+      "prodOldPrice": 999,
+      "prodImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8XznePQZcci6fq9Ie_7cy0XgTwjj3K0C1FJEc8RqpMArexCsDFmNLDHMbW-WKNP_quE4&usqp=CAU",
+      "id": 13
+    },
+    {
+      "userId": 10,
+      "prodId": 9,
+      "prodName": "Portable Power Bank",
+      "prodPrice": 39.99,
+      "prodOldPrice": 49.99,
+      "prodImg": "https://kontakt.az/media/catalog/product/cache/a252e3db3d11365dd1457895056a5f34/_/5/_57__10.png",
+      "id": 14
+    },
+    {
+      "userId": 10,
+      "prodId": 10,
+      "prodName": "Smartwatch Strap (Leather)",
+      "prodPrice": 29.99,
+      "prodOldPrice": 39.99,
+      "prodImg": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/n/e/new_project_-_2023-01-13t225336.030.png",
+      "id": 15
+    },
+    {
+      "userId": 10,
+      "prodId": 1,
+      "prodName": "iPhone 14 Pro",
+      "prodPrice": 999,
+      "prodOldPrice": 1099,
+      "prodImg": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/t/m/tm-dg-sbp-1105-sm-1957.png",
+      "id": 16
+    }
+  ],
+  "featured": [
+    {
+      "id": 1,
+      "productId": 1
+    },
+    {
+      "id": 2,
+      "productId": 3
+    }
+  ],
+  "offers": [
+    {
+      "id": 1,
+      "title": "Special Discount",
+      "description": "Get 20% off on your first order",
+      "validUntil": "2024-12-31"
+    }
+  ]
+}

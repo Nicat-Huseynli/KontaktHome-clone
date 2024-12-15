@@ -1,0 +1,45 @@
+.stores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    justify-content: center;
+    background-color: #F3F3F3;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+  .card {
+    max-width: 445px;
+    height: 180px;
+    width: 100%;
+    display: flex;
+    margin-right: 10px;
+    flex-direction: column;
+    padding: 20px 16px;
+    background: #fff;
+    margin-bottom: 9px; 
+    border-radius: 10px;
+  }
+  .card h3 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+  }
+  .card p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #777;
+    margin-bottom: 40px;
+  }
+  .card .hours {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    margin-right: 5px;
+    color: #17a539;
+  }

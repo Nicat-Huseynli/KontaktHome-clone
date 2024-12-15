@@ -1,0 +1,24 @@
+.delivery-payment {
+    color: #333;
+    line-height: 1.75rem;
+    font-size: 16px;
+
+	strong {
+		color: #e03a3a;
+	}
+	a {
+		color: #007bff;
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	ul {
+    list-style: disc;
+		margin: 10px 0;
+		padding-left: 20px;
+	}
+	li {
+		margin: 5px 0;
+	}
+}
