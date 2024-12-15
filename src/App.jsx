@@ -11,7 +11,7 @@ import AboutCompany from './components/footer-links/AboutCompany';
 import DeliveryPayment from './components/delivery and payment/DeliveryPayment';
 import GuaranteeBestPrice from './components/guaranteeForBestPrice/GuaranteeBestPrice';
 import Telefoniya from './components/telefoniya/Telefoniya';
-import Smartphones from './components/smartphones/Smartphones';
+// import Smartphones from './components/smartphones/Smartphones';
 // import SidebarFilters from './components/sidebar-filtres/sidebarFilters';
 import ProductInfo from './components/Product-Info/ProductInfo';
 import Products from './components/products/Products';
