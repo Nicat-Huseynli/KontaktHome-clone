@@ -136,8 +136,8 @@ function Header() {
 						</li>
 					</ul>
 
-					<div className='flex items-center gap-[20px]'>
-						<p className='font-[550] text-[20px]'>
+					<div className='flex items-center md:gap-[20px] sm:gap-[10px] max-sm:gap-[10px]'>
+						<p className='flex gap-1 font-[550] md:text-[20px] sm:text-[16px] max-sm:text-[16px]'>
 							<span className='text-red-500'>*</span>{' '}
 							<a href='tel:*6060'>6060</a>{' '}
 						</p>
@@ -149,7 +149,7 @@ function Header() {
 							</button>
 							{userId ? (
 								<button className='enter-account-btn' onClick={logOut}>
-									Çıxış
+									{t('logOut')}
 								</button>
 							) : (
 								<button
@@ -162,6 +162,7 @@ function Header() {
 
 						<select
 							onChange={(e) => changeLanguage(e.target.value)}
+							className='outline-none px-2'
 							name=''
 							id=''>
 							<option value='az'>Az</option>
@@ -179,7 +180,9 @@ function Header() {
 
 						<div
 							ref={wrapperRef}
-							className='flex gap-3 items-center justify-center'>
+							className={`flex gap-3 items-center justify-center ${
+								userId ? 'sm:hidden max-sm:hidden' : 'sm:flex max-sm:flex'
+							} `}>
 							<RiAccountCircleLine
 								className='md:hidden sm:block'
 								size={25}
@@ -210,7 +213,7 @@ function Header() {
 							<span
 								onClick={() => setShowCategory(!showCategory)}
 								className='text-[#4B5563] font-[500] text-[16px] cursor-pointer lg:block sm:hidden  max-sm:hidden'>
-								{t("catalog")}
+								{t('catalog')}
 							</span>
 						</div>
 
@@ -295,7 +298,7 @@ function Header() {
 				</div>
 			</Sticky>
 
-			{showCategory && <Category />}
+			{showCategory && <Category showCategory={showCategory} />}
 
 			{showPayModal && <MonthlPayModal showPaymentModal={showPaymentModal} />}
 			{showLoginSidebar && (

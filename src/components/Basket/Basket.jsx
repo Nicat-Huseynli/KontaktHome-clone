@@ -8,8 +8,11 @@ import { IoMdClose } from 'react-icons/io';
 import { TbHandClick } from 'react-icons/tb';
 import BuyOneClick from '../buy-oneClick/BuyOneClick';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 function Basket() {
+	const { t, i18n } = useTranslation();
+
 	const NavigateHome = useNavigate();
 	const [loading, setLoading] = useState(true);
 
@@ -91,9 +94,9 @@ function Basket() {
 				{/* <div> */}
 				<div className=' bg-white p-4'>
 					<p className='font-[500] text-[16px]'>
-						Səbət ({' '}
+						{t('cart')} ({' '}
 						{basketData?.filter((basket) => basket.userId === userId).length}{' '}
-						Məhsul)
+						{t('product')})
 					</p>
 				</div>
 
@@ -158,14 +161,14 @@ function Basket() {
 								<div className='lg:w-[30%] sm:w-[100%] max-sm:w-[100%]'>
 									<div className=' bg-white p-4 '>
 										<div className='flex justify-between p-3 border-solid border-b-2 border-[#F3F3F3]'>
-											<p className='font-[600] text-[16px]'>Məhsul:</p>
+											<p className='font-[600] text-[16px]'>{t('product')}:</p>
 											<p>
 												{
 													basketData?.filter(
 														(basket) => basket.userId === userId
 													).length
 												}{' '}
-												Məhsul
+												{t('product')}
 											</p>
 										</div>
 										<div>
@@ -178,7 +181,8 @@ function Basket() {
 																<p className='sm:w-[60%] max-sm:w-[50%]'>
 																	{item.prodName}
 																	<span className='text-[#FF9933] font-[500] ms-1'>
-																		( {productCounts[item.id] || 1} ədəd)
+																		( {productCounts[item.id] || 1}{' '}
+																		{t('pieces')})
 																	</span>
 																</p>
 																<p>
@@ -194,7 +198,7 @@ function Basket() {
 													})}
 
 												<div className='flex justify-between mt-4 font-[500] text-[14px] bg-[#F3F3F3] p-4'>
-													<p>Ümumi məbləğ:</p>
+													<p>{t('totalAmount')}</p>
 													<p>
 														{basketData
 															?.filter((basket) => basket.userId === userId)
@@ -208,7 +212,7 @@ function Basket() {
 												</div>
 
 												<div className='flex justify-between mt-4 font-[500] text-[14px] bg-[#F3F3F3] p-4'>
-													<p>Endirim:</p>
+													<p>{t('discount')}:</p>
 													<p className='font-[600] text-[14px] text-[#FF003C]'>
 														{(
 															basketData
@@ -232,7 +236,9 @@ function Basket() {
 												</div>
 											</div>
 											<div className='flex justify-between mt-8 bg-[#F3F3F3] p-4'>
-												<p className='font-[600] text-[14px]'>Yekun məbləğ:</p>
+												<p className='font-[600] text-[14px]'>
+													{t('finalAmount')}:
+												</p>
 												<p className='font-[700] text-[16px]'>
 													{basketData
 														?.filter((basket) => basket.userId === userId)
@@ -248,7 +254,7 @@ function Basket() {
 									</div>
 									<div className='flex flex-col'>
 										<button className='w-[95%] m-auto mt-4 flex items-center justify-center gap-2 bg-[#FF003C] text-white py-4 px-16 rounded-lg text-[18px] font-[500]'>
-											Sifarişi rəsmiləşdir
+											{t('confirmOrder')}
 										</button>
 										<button
 											onClick={openPaymentModal}
@@ -257,7 +263,7 @@ function Basket() {
 												size={19}
 												style={{ cursor: 'pointer', fil: 'white' }}
 											/>
-											Bir kliklə al
+											{t('buyOneClick')}
 										</button>
 									</div>
 								</div>
@@ -266,15 +272,15 @@ function Basket() {
 							<div className='w-[100%] bg-white h-[50vh] flex flex-col items-center justify-center gap-4 rounded-lg'>
 								<img src={basketEmpty} alt='' />
 								<p className='text-[24px] font-[600] text-[#323232] mt-3'>
-									Səbətinizdə məhsul yoxdur
+									{t('noProd')}
 								</p>
 								<p className='text-[16px] font-[500] text-[#777]'>
-									İstədiyiniz məhsulu səbətinizə əlavə edin
+									{t('addProd')}
 								</p>
 								<button
 									className='text-[14px] font-[500] text-[#323232] w-[18%] py-4 border-solid border-[1px] border-[#323232] rounded-md mt-4'
 									onClick={() => NavigateHome('/')}>
-									Əsas səhifə
+									{t('home')}
 								</button>
 							</div>
 						)
@@ -282,15 +288,15 @@ function Basket() {
 						<div className='w-[100%] mx-auto bg-white h-[50vh] flex flex-col items-center justify-center gap-4 rounded-lg'>
 							<img src={basketEmpty} alt='' />
 							<p className='md:text-[24px] font-[600] text-[#323232] mt-3 sm:text-[20px]'>
-								Səbətinizdə məhsul yoxdur
+								{t('noProd')}
 							</p>
 							<p className='md:text-[16px] font-[500] text-[#777] sm:text-[14px]'>
-								İstədiyiniz məhsulu səbətinizə əlavə edin
+								{t('addProd')}
 							</p>
 							<button
 								className='text-[14px] font-[500] text-[#323232] md:w-[18%] sm:w-[30%] max-sm:w-[50%] py-4 border-solid border-[1px] border-[#323232] rounded-md mt-4'
 								onClick={() => NavigateHome('/')}>
-								Əsas səhifə
+								{t('home')}
 							</button>
 						</div>
 					)}

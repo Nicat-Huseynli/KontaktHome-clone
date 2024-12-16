@@ -2,6 +2,7 @@
     "//firstComment": "Header Part",
     "monthlyPayment": "Aylıq ödəniş",
     "logIn": "Daxil ol",
+    "logOut": "Çıxış",
     "shops": "Mağazalar",
     "corporateSales": "Korporativ satışlar",
     "catalog": "Kataloq",
@@ -80,6 +81,31 @@
     "returnPolicy": "Geri qaytarma siyasəti",
     "ultraGoldGuarantee": "Ultra Qızıl Zəmanət",
     "monthlyPaymentsProcessing": "Aylıq ödənişlərin həyata keçirilməsi",
-    "stayUs": "Bizimlə qalın:"
+    "stayUs": "Bizimlə qalın:",
+
+
+    "//loginSideBar": "Login Sidebar",
+    "welcome": "Xoş gördük!",
+    "loginInfo": "Üstünlüklərindən faydalanmaq üçün daxil olun!",
+    "or":"və ya",
+    "email": "Elektron poçt",
+    "password": "Şifrə",
+    "register": "Qeydiyyat",
+    "forgotPwd": "Şifrənizi unutmusunuz?",
       
+    "//Register": "Register Page",
+    "userName": "İstifadəçi adı",
+
+
+    "//Basket": "Basket Page",
+    "cart": "Səbət",
+    "product": "Məhsul",
+    "noProd": "Səbətinizdə məhsul yoxdur",
+    "addProd": "İstədiyiniz məhsulu səbətinizə əlavə edin",
+    "home": "Əsas səhifə",
+    "pieces": "Ədəd",
+    "totalAmount": "Ümumi Məbləğ",
+    "finalAmount": "Yekun Məbləğ",
+    "discount": "Endirim",
+    "confirmOrder": "Sifarişi rəsmiləşdir"
 }

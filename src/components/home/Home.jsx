@@ -166,6 +166,66 @@ function Home() {
 		}
 	};
 
+	// Translate Category to the Azerbaijan language
+	const translateToAze = (category) => {
+		switch (category) {
+			case 'Phones':
+				return 'Smartfonlar və aksessuarlar';
+			case 'Smart Watches':
+				return 'Smart qadjetlər';
+			case 'Notebooks and Tablets':
+				return 'Notbuklar, PK, planşetlər';
+			case 'For Gamers':
+				return 'Geymerlər üçün məhsullar';
+			case 'TV & Audio':
+				return 'TV, audio və foto';
+			case 'Kitchen Electronics':
+				return 'Mətbəx texnikası';
+			case 'Home Electronics':
+				return 'Ev texnikası';
+			case 'Hobby':
+				return 'Hobbi və əyləncə';
+			case 'Furniture':
+				return 'Mebel və tekstil';
+			case 'Home and Garden':
+				return 'Ev və bağ';
+
+			default:
+				break;
+		}
+	};
+
+	// Translate Category to the Russian language
+	const translateToRu = (category) => {
+		switch (category) {
+			case 'Phones':
+				return 'Смартфоны и аксессуары';
+			case 'Smart Watches':
+				return 'Умные гаджеты';
+			case 'Notebooks and Tablets':
+				return 'Ноутбуки, ПК, планшеты';
+			case 'For Gamers':
+				return 'Товары для геймеров';
+			case 'TV & Audio':
+				return 'ТВ, аудио и фото';
+			case 'Kitchen Electronics':
+				return 'Кухонная техника';
+			case 'Home Electronics':
+				return 'Бытовая техника';
+			case 'Hobby':
+				return 'Хобби и развлечения';
+			case 'Furniture':
+				return 'Мебель и текстиль';
+			case 'Home and Garden':
+				return 'Дом и сад';
+
+			default:
+				return category;
+		}
+	};
+
+	const pageLang = localStorage.getItem('i18nextLng');
+
 	return (
 		<div>
 			{loading && (
@@ -532,7 +592,11 @@ function Home() {
 											? 'text-white bg-[#323232] '
 											: 'bg-[#eaeaea]'
 									}`}>
-									{category.name}
+									{pageLang == 'en'
+										? category.name
+										: pageLang == 'ru'
+										? translateToRu(category.name)
+										: translateToAze(category.name)}
 								</button>
 							);
 						})}

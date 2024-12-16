@@ -1,9 +1,12 @@
 import axios from 'axios';
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { BiSolidErrorAlt } from 'react-icons/bi';
 import { useNavigate } from 'react-router';
 
 function Register() {
+	const { t, i18n } = useTranslation();
+
 	const [userName, setUserName] = useState('');
 	const [email, setEmail] = useState('');
 	const [pwd, setPwd] = useState('');
@@ -18,7 +21,8 @@ function Register() {
 		if (!userName.trim()) {
 			newErrors.userName = 'Bu xananı doldurmaq zəruridir.';
 		} else if (userName.length < 3) {
-			newErrors.userName = 'İstifadəçi adı ən azı 3 simvoldan ibarət olmalıdır.';
+			newErrors.userName =
+				'İstifadəçi adı ən azı 3 simvoldan ibarət olmalıdır.';
 		}
 
 		if (!email.trim()) {
@@ -55,7 +59,8 @@ function Register() {
 				className='md:w-[50%] m-auto md:p-12 sm:w-[60%] max-sm:w-[90%] sm:p-7 max-sm:p-7 h-[40vh] flex flex-col gap-2'>
 				{/* Username Input */}
 				<label htmlFor='userName'>
-					<span className='text-red-600'>* </span>İstifadəçi adı
+					<span className='text-red-600'>* </span>
+					{t('userName')}
 				</label>
 				<input
 					onChange={(e) => setUserName(e.target.value)}
@@ -74,7 +79,8 @@ function Register() {
 
 				{/* Email Input */}
 				<label htmlFor='email' className='mt-4'>
-					<span className='text-red-600 text-[12px]'>* </span>Elektron poçt
+					<span className='text-red-600 text-[12px]'>* </span>
+					{t('email')}
 				</label>
 				<input
 					onChange={(e) => setEmail(e.target.value)}
@@ -94,7 +100,8 @@ function Register() {
 
 				{/* Password Input */}
 				<label htmlFor='password' className='mt-4'>
-					<span className='text-red-600 text-[12px]'>* </span>Şifrə
+					<span className='text-red-600 text-[12px]'>* </span>
+					{t('password')}
 				</label>
 				<input
 					onChange={(e) => setPwd(e.target.value)}
@@ -114,7 +121,7 @@ function Register() {
 
 				{/* Submit Button */}
 				<button className='bg-[#FF003C] text-white p-[15px] mt-6 rounded-lg text-[14px] ease-in duration-100 hover:opacity-55'>
-					Register
+					{t('register')}
 				</button>
 			</form>
 		</div>

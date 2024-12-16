@@ -15,15 +15,13 @@ import tvAudio from '../../assets/images/category-icons/tv-audio.svg';
 import watch from '../../assets/images/category-icons/watch.svg';
 import { useTranslation } from 'react-i18next';
 
-function Category() {
+function Category({ showCategory }) {
 	const { t, i18n } = useTranslation();
 
 	// const changeLanguage = (lang) => {
 	// 	// localStorage.setItem("lang", lang);
 	// 	i18n.changeLanguage(lang); // Switch language
 	// };
-
-
 
 	const [loading, setLoading] = useState(true);
 	// const [data, setData] = useState([]);
@@ -123,6 +121,35 @@ function Category() {
 		}
 	};
 
+	// Translate Category to the Russian language
+	const translateToRu = (category) => {
+		switch (category) {
+			case 'Phones':
+				return 'Смартфоны и аксессуары';
+			case 'Smart Watches':
+				return 'Умные гаджеты';
+			case 'Notebooks and Tablets':
+				return 'Ноутбуки, ПК, планшеты';
+			case 'For Gamers':
+				return 'Товары для геймеров';
+			case 'TV & Audio':
+				return 'ТВ, аудио и фото';
+			case 'Kitchen Electronics':
+				return 'Кухонная техника';
+			case 'Home Electronics':
+				return 'Бытовая техника';
+			case 'Hobby':
+				return 'Хобби и развлечения';
+			case 'Furniture':
+				return 'Мебель и текстиль';
+			case 'Home and Garden':
+				return 'Дом и сад';
+
+			default:
+				return category;
+		}
+	};
+
 	// Type of products
 	// const [typeOfProducts, setTypeOfProducts] = useState([])
 
@@ -134,8 +161,13 @@ function Category() {
 		location.reload();
 	};
 
+	const pageLang = localStorage.getItem('i18nextLng');
+
 	return (
-		<div className='h-[90vh] overflow-hidden lg:block md:block sm:hidden max-sm:hidden'>
+		<div
+			className={`h-[90vh] overflow-hidden lg:block md:block ${
+				showCategory ? 'sm:block max-sm:block' : 'sm:hidden max-sm:hidden'
+			} `}>
 			{loading && (
 				<div className='flex items-center justify-center h-screen'>
 					<div
@@ -161,7 +193,11 @@ function Category() {
 									className='flex items-center gap-3 text-[#323232] lg:text-[14px] md:text-[12px] font-[500] group hover:text-[#ff003c]'>
 									<img src={category.imageUrl} alt={category.name} />
 									<p className=' group-hover:text-[#ff003c]'>
-										{translateToAze(category.name)}
+										{pageLang == 'en'
+											? category.name
+											: (pageLang == 'ru'
+											? translateToRu(category.name)
+											: translateToAze(category.name))}
 									</p>
 									<SlArrowRight className='text-gray-300 group-hover:text-[#ff003c] lg:size-3 md:size-9 ml-auto' />
 								</Link>

@@ -771,7 +771,7 @@
         "smartFeatures": "Yes",
         "displayType": "Neo QLED"
       },
-      "imageUrl": "https://example.com/qn90a.jpg",
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/t/e/televizor-samsung-qe98qn90dauxru-tm-dg-tva-1118-tv-1094_1.png",
       "description": "Crisp visuals and premium sound."
     },
     {
@@ -789,7 +789,7 @@
         "smartFeatures": "Yes",
         "displayType": "OLED"
       },
-      "imageUrl": "https://example.com/cx-oled.jpg",
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/t/m/tm-dg-tva-1118-tv-1142_1.png",
       "description": "Exceptional contrast and vibrant colors."
     },
     {
@@ -806,71 +806,71 @@
         "soundTechnology": "Dolby Atmos",
         "connectivity": "Bluetooth, HDMI"
       },
-      "imageUrl": "https://example.com/ht-g700.jpg",
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/f/i/file_1062_1.png",
       "description": "Immersive surround sound for home theater."
     },
     {
       "id": 44,
-      "name": "Bose QuietComfort 45",
+      "name": "Samsung Crystal UHD",
       "price": 299,
       "oldPrice": 329,
       "categoryId": 5,
-      "brand": "Bose",
+      "brand": "Samsung",
       "rating": 4.8,
       "characteristics": {
-        "type": "Wireless Headphones",
+        "type": "TV",
         "noiseCancellation": "Active",
         "batteryLife": "24 hours"
       },
-      "imageUrl": "https://example.com/qc45.jpg",
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/n/e/new_project_-_2023-05-31t162908.921.png",
       "description": "Comfortable headphones with superior audio quality."
     },
     {
       "id": 45,
-      "name": "Sonos One (Gen 2)",
+      "name": "LG UHD AI ThinQ",
       "price": 199,
       "oldPrice": 229,
       "categoryId": 5,
-      "brand": "Sonos",
+      "brand": "LG",
       "rating": 4.7,
       "characteristics": {
-        "type": "Smart Speaker",
+        "type": "TV",
         "voiceAssistant": "Alexa, Google Assistant",
         "connectivity": "Wi-Fi, Bluetooth"
       },
-      "imageUrl": "https://example.com/sonos-one.jpg",
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/t/m/tm-dg-tva-1118-tv-0877-1.png",
       "description": "Rich sound and smart home integration."
     },
     {
       "id": 46,
-      "name": "JBL Flip 6",
+      "name": "LG Smart TV",
       "price": 129,
       "oldPrice": 149,
       "categoryId": 5,
-      "brand": "JBL",
+      "brand": "LG",
       "rating": 4.6,
       "characteristics": {
-        "type": "Portable Bluetooth Speaker",
+        "type": "TV",
         "waterResistance": "IP67",
         "batteryLife": "12 hours"
       },
-      "imageUrl": "https://example.com/flip6.jpg",
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/k/o/kontakt_home_51__2.png",
       "description": "Durable speaker with powerful audio."
     },
     {
       "id": 47,
-      "name": "Apple HomePod Mini",
+      "name": "Sony Ht-S100F C E3",
       "price": 99,
       "oldPrice": 119,
       "categoryId": 5,
-      "brand": "Apple",
+      "brand": "Sony",
       "rating": 4.7,
       "characteristics": {
-        "type": "Smart Speaker",
+        "type": "Soundbar",
         "voiceAssistant": "Siri",
         "connectivity": "Wi-Fi"
       },
-      "imageUrl": "https://example.com/homepod-mini.jpg",
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a252e3db3d11365dd1457895056a5f34/_/3/_3__482_11.png",
       "description": "Compact speaker with impressive sound."
     },
     {
@@ -882,43 +882,43 @@
       "brand": "Pioneer",
       "rating": 4.8,
       "characteristics": {
-        "type": "Desktop Monitor Speakers",
+        "type": "Soundbar",
         "connectivity": "RCA, AUX",
         "frequencyRange": "70Hz - 30kHz"
       },
-      "imageUrl": "https://example.com/dm40.jpg",
+      "imageUrl": "https://www.djbutikken.com/wp-content/uploads/2019/10/Skjermbilde-2023-03-22-kl.-14.10.08.png",
       "description": "Perfect for music production and listening."
     },
     {
       "id": 49,
-      "name": "Bang & Olufsen Beosound Stage",
+      "name": "Pioneer SBX-301 ",
       "price": 1599,
       "oldPrice": 1799,
       "categoryId": 5,
-      "brand": "Bang & Olufsen",
+      "brand": "Pioneer",
       "rating": 4.9,
       "characteristics": {
         "type": "Soundbar",
         "soundTechnology": "Dolby Atmos",
         "design": "Minimalist"
       },
-      "imageUrl": "https://example.com/beosound.jpg",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeAvBZP2JTgdQyj__dGv_6s9O9UJOUZBL6-g&s",
       "description": "Luxury soundbar with pristine sound quality."
     },
     {
       "id": 50,
-      "name": "Roku Streambar",
+      "name": "Soundbar Samsung HW-Q800D/RU",
       "price": 129,
       "oldPrice": 149,
       "categoryId": 5,
-      "brand": "Roku",
+      "brand": "Samsung",
       "rating": 4.6,
       "characteristics": {
-        "type": "Soundbar and Streaming Device",
+        "type": "Soundbar",
         "resolution": "4K HDR",
         "smartFeatures": "Built-in Roku OS"
       },
-      "imageUrl": "https://example.com/streambar.jpg",
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/ec3348cd707f11bd7a951e83328510dc/t/m/tm-dg-tva-1118-sb-0072_1.png",
       "description": "Affordable all-in-one streaming and sound solution."
     },
     {
@@ -1789,15 +1789,6 @@
     },
     {
       "userId": 8,
-      "prodId": 3,
-      "prodName": "OnePlus 11",
-      "prodPrice": 649,
-      "prodOldPrice": 749,
-      "prodImg": "https://kontakt.az/media/catalog/product/cache/a252e3db3d11365dd1457895056a5f34/_/-/_-_2023-04-25t114204.528.png",
-      "id": 7
-    },
-    {
-      "userId": 8,
       "prodId": 1,
       "prodName": "iPhone 14 Pro",
       "prodPrice": 999,
@@ -1822,15 +1813,6 @@
       "prodOldPrice": 1999,
       "prodImg": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/N/e/New-Project-7-9.png",
       "id": 11
-    },
-    {
-      "userId": 8,
-      "prodId": 45,
-      "prodName": "Sonos One (Gen 2)",
-      "prodPrice": 199,
-      "prodOldPrice": 229,
-      "prodImg": "https://example.com/sonos-one.jpg",
-      "id": 12
     },
     {
       "userId": 10,
@@ -1867,6 +1849,24 @@
       "prodOldPrice": 1099,
       "prodImg": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/t/m/tm-dg-sbp-1105-sm-1957.png",
       "id": 16
+    },
+    {
+      "userId": 8,
+      "prodId": 26,
+      "prodName": "HP Spectre x360",
+      "prodPrice": 1399,
+      "prodOldPrice": 1499,
+      "prodImg": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/t/m/tm-dg-kot-1114-nb-1961_1.png",
+      "id": 17
+    },
+    {
+      "userId": 8,
+      "prodId": 18,
+      "prodName": "Smart Home Security Camera",
+      "prodPrice": 119,
+      "prodOldPrice": 149,
+      "prodImg": "https://kontakt.az/media/catalog/product/cache/7879779a33419e181769bd71b84a871f/0/0/0048019_1.jpg",
+      "id": 18
     }
   ],
   "featured": [

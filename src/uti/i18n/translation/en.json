@@ -2,6 +2,7 @@
     "//firstComment": "Header Part",
     "monthlyPayment": "Monthly Payment",
     "logIn": "Log In",
+    "logOut": "Log Out",
     "shops": "Shops",
     "corporateSales": "Corporate Sales",
     "catalog": "Catalog",
@@ -80,7 +81,32 @@
     "returnPolicy": "Return Policy",
     "ultraGoldGuarantee": "Ultra Gold Guarantee",
     "monthlyPaymentsProcessing": "Monthly Payments Processing",
-    "stayUs": "Stay with us"
+    "stayUs": "Stay with us",
 
+
+    "//loginSideBar": "Login Sidebar",
+    "welcome": "Welcome!",
+    "loginInfo": "Log in to take advantage of the benefits!",
+    "or":"or",
+    "email": "Email",
+    "password": "Password",
+    "register": "Register",
+    "forgotPwd": "Forgot your password?",
+
+    "//Register": "Register Page",
+    "userName": "User Name",
+
+
+    "//Basket": "Basket Page",
+    "cart": "Cart",
+    "product": "Products",
+    "noProd": "There are no products in your cart.",
+    "addProd": "Add the desired product to your cart.",
+    "home": "Home Page",
+    "pieces": "Pices",
+    "totalAmount": "Total Amount",
+    "finalAmount": "Final amount",
+    "discount": "Discount",
+    "confirmOrder": "Confirm order"
 }
   

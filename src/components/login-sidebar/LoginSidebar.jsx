@@ -18,6 +18,7 @@ import ForgetPassword from './ForgetPassword';
 import Register from './Register';
 import { useNavigate } from 'react-router';
 import axios from 'axios';
+import { useTranslation } from 'react-i18next';
 
 function LoginSidebar({
 	openLoginSidebar,
@@ -26,6 +27,7 @@ function LoginSidebar({
 	openAccount,
 	showAccount,
 }) {
+	const { t, i18n } = useTranslation();
 	const Navigate = useNavigate();
 	const [open, setOpen] = useState(true);
 
@@ -151,10 +153,9 @@ function LoginSidebar({
 										onClick={() => {
 											if (showLoginSidebar) {
 												openLoginSidebar();
-											} else if(showAccount){
-												openAccount()
-											}
-											else {
+											} else if (showAccount) {
+												openAccount();
+											} else {
 												closeLoginSidebar();
 											}
 										}}
@@ -163,10 +164,10 @@ function LoginSidebar({
 									/>
 									<DialogTitle className='text-base text-[#111827] mt-[75px]'>
 										<h3 className='text-[28px] font-[600] mt-[50px]'>
-											Xoş gördük! 👋🏻
+											{t('welcome')} 👋🏻
 										</h3>
 										<p className='text-[#777777] text-[14px] mt-3'>
-											Üstünlüklərindən faydalanmaq üçün daxil olun!
+											{t('loginInfo')}
 										</p>
 									</DialogTitle>
 								</div>
@@ -193,7 +194,7 @@ function LoginSidebar({
 									<div className='flex items-center mt-10 w'>
 										<hr className=' w-[40%]' />
 										<p className='w-[20%] text-center text-gray-500 text-[14px]'>
-											və ya
+											{t('or')}
 										</p>
 										<hr className='w-[40%]' />
 									</div>
@@ -202,7 +203,8 @@ function LoginSidebar({
 										<form onSubmit={checkData} className='login-form' action=''>
 											<div className='form-input'>
 												<label htmlFor='email'>
-													<span className='text-red-600'>* </span>Elektron poçt
+													<span className='text-red-600'>* </span>
+													{t('email')}
 												</label>
 												<input onChange={getEmail} type='email' id='email' />
 											</div>
@@ -214,7 +216,8 @@ function LoginSidebar({
 											)}
 											<div className='form-input'>
 												<label htmlFor='password'>
-													<span className='text-red-600'>* </span>Şifrə
+													<span className='text-red-600'>* </span>
+													{t('password')}
 												</label>
 
 												<input
@@ -251,7 +254,7 @@ function LoginSidebar({
 													className='flex align-center gap-1'
 													onClick={register}>
 													<p className='cursor-pointer text-[12px] text-[#777777]'>
-														Register
+														{t('register')}
 													</p>
 												</div>
 
@@ -259,7 +262,7 @@ function LoginSidebar({
 													<p
 														onClick={openForgetPassword}
 														className='cursor-pointer text-[12px] text-[#777777] hover:underline'>
-														Şifrənizi unutmusuz?
+														{t('forgotPwd')}
 													</p>
 												</div>
 											</div>
@@ -268,7 +271,7 @@ function LoginSidebar({
 												onClick={logIn}
 												disabled={showEmailError || showPasswordError}
 												className='bg-[#FF003C] text-white p-[15px] rounded-lg text-[14px] ease-in duration-100 hover:opacity-55'>
-												Daxil ol
+												{t('logIn')}
 											</button>
 										</form>
 									</div>
