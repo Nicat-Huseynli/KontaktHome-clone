@@ -103,6 +103,7 @@ function Header() {
 		setInputText('');
 	};
 
+	// document.title = `Kontak Home: Home | page`;
 	return (
 		<div className='relative'>
 			<div>
@@ -311,6 +312,7 @@ function Header() {
 			{showAccount && (
 				<LoginSidebar openAccount={openAccount} showAccount={showAccount} />
 			)}
+
 		</div>
 	);
 }

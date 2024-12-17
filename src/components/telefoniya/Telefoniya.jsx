@@ -101,6 +101,10 @@ function Telefoniya() {
 		}
 	};
 
+	const categoryName = category.find((item) => item.id == id)?.name;
+
+	document.title = `Kontak Home: ${categoryName}`;
+
 	return (
 		<div className=' bg-[#F3F3F3]'>
 			{loading && (

@@ -210,7 +210,7 @@ function Category({ showCategory }) {
 				<div
 					onMouseEnter={() => setShowCategories(true)}
 					onMouseLeave={() => setShowCategories(false)}
-					className='p-5 bg-white absolute top-[149px] lg:left-[310px] md:left-[200px] z-[7000] h-[85vh] w-[75%]'>
+					className='p-5 bg-white absolute top-[149px] lg:left-[310px] md:left-[200px] z-[7000] h-[85vh] w-[77%]'>
 					<p>
 						{categories.map((category) => {
 							if (translateToEng(selectedCategory) === category.name) {

@@ -37,6 +37,7 @@ import Products from '../products/Products';
 import LoginSidebar from '../login-sidebar/LoginSidebar';
 
 function Home() {
+	document.title = `Kontak Home: Home`;
 	const { t, i18n } = useTranslation();
 
 	// const changeLanguage = (lang) => {
@@ -228,6 +229,8 @@ function Home() {
 
 	return (
 		<div>
+
+
 			{loading && (
 				<div className='flex items-center justify-center h-screen'>
 					<div

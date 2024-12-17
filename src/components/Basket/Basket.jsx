@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 function Basket() {
+	document.title = `Kontak Home: Basket`;
 	const { t, i18n } = useTranslation();
 
 	const NavigateHome = useNavigate();

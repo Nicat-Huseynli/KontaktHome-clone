@@ -18,6 +18,7 @@ function ProductInfo() {
 
 	const [data, setData] = useState([]);
 	const { id } = useParams();
+	document.title = `Kontak Home: ${data.name}`;
 
 	const [loading, setLoading] = useState(true);
 

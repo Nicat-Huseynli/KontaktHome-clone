@@ -106,7 +106,7 @@ function Footer() {
 				<PiCopyright size={12} /> Kontakt Home 2024
 			</div>
 
-			<div className='fixed bottom-12 right-12 rounded-full'>
+			<div className='fixed bottom-12 right-12 rounded-full z-[9999]'>
 				<img src={lifeChat} alt='' />
 			</div>
 		</div>

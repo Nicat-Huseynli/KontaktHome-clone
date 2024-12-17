@@ -19,13 +19,14 @@ import { IoFilterSharp } from 'react-icons/io5';
 import { useTranslation } from 'react-i18next';
 
 function Products() {
+	const { type } = useParams();
+	document.title = `Kontak Home: Products | ${type}`;
+
 	const { t, i18n } = useTranslation();
 
 	const navigateCategory = useNavigate();
 
 	const [data, setData] = useState([]);
-
-	const { type } = useParams();
 
 	const [hoveredItem, setHoveredItem] = useState(null);
 
@@ -509,211 +510,102 @@ function Products() {
 						<div>
 							<div className='w-[100%] mx-auto max-w-2xl px-4 py-3 sm:px-6 lg:max-w-7xl lg:px-8'>
 								<div className='bg-[#F3F3F3] p-4 grid grid-cols-1 gap-x-1 gap-y-9 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8 sm:gap-x-5'>
-									{selectedBrands.length > 0
-										? // console.log(
-										  selectedBrands.flatMap((brand) =>
-												// console.log(brand)
-
-												// console.log(
-												data
-													.filter(
-														(item) =>
-															// console.log(item)
-															// console.log(type)
-
-															item.characteristics.type === type &&
-															item.brand === brand &&
-															item.price > minValue &&
-															item.price < maxValue
-													)
-													// )
-													.sort((a, b) => {
-														console.log('Sorting:', a, b);
-														if (select == 1) {
-															return a.name.localeCompare(b.name);
-														} else if (select == 2) {
-															return Number(a.price) - Number(b.price);
-														} else if (select == 3) {
-															return Number(b.price) - Number(a.price);
-														}
-													})
-													.map((product, index) => (
-														<div className='flex flex-col w-[100%] h-[105%] bg-white rounded-lg px-4 pt-2 group'>
-															<Link
-																to={`/productInfo/${product.id}`}
-																onMouseEnter={() => setHoveredItem(index)}
-																onMouseLeave={() => setHoveredItem(null)}
-																// onMouseEnter={() => setScaleUp(true)}
-																// onMouseLeave={() => setScaleUp(false)}
-																// className='flex flex-col w-[300px] h-[500px] bg-white rounded-lg px-4 group relative'
-																key={product.id}>
-																<img
-																	alt={product.name}
-																	src={product.imageUrl}
-																	className='aspect-square w-full rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-80'
-																/>
-																<h3 className='text-[14px] font-[500] mb-7 mt-5'>
-																	{product.name}
-																</h3>
-																<p className='text-[12px] bg-[#ff003c] mb-4 text-white font-[500] w-[26%] p-1 text-center rounded-md'>
-																	{product.price > product.oldPrice
-																		? -(
-																				product.price - product.oldPrice
-																		  ).toFixed(2)
-																		: (-(
-																				product.oldPrice - product.price
-																		  )).toFixed(2) + '₼'}
-																</p>
-																<h3 className='text-[#777] font-[500] text-[13px]'>
-																	<del>
-																		{product.price > product.oldPrice
-																			? product.price
-																			: product.oldPrice + ' ₼'}
-																	</del>
-																</h3>
-																<div className='flex justify-between'>
-																	<h3 className='text-[#ff003c] font-[700] text-[16px] '>
-																		{product.price > product.oldPrice
-																			? product.oldPrice
-																			: product.price + ' ₼'}
-																	</h3>
-																	<p className='font-[600] text-[12px] text-[#323232]'>
-																		0% 12 {t('month')}
-																	</p>
-																</div>
-															</Link>
-															{hoveredItem == index && (
-																<div
-																	onMouseEnter={() => setHoveredItem(index)}
-																	onMouseLeave={() => setHoveredItem(null)}
-																	// onMouseEnter={() => setScaleUp(true)}
-																	// onMouseLeave={() => setScaleUp(false)}
-																	className='flex items-center justify-center gap-3 bg-white pt-5 pb-0
-																	 w-[276px] mx-auto'>
-																	<div className='bg-[#f3f3f3] p-2 rounded-xl'>
-																		<IoMdHeartEmpty
-																			size={25}
-																			style={{ cursor: 'pointer' }}
-																		/>
-																	</div>
-																	<div className='bg-[#f3f3f3] p-2 rounded-xl'>
-																		<LiaBalanceScaleSolid
-																			size={25}
-																			style={{ cursor: 'pointer' }}
-																		/>
-																	</div>
-																	<button
-																		onClick={() => addBasket(product.id)}
-																		className='flex gap-4 text-white bg-[#ff003c] p-3 justify-center items-center text-center rounded-xl font-[550] text-[12px]'>
-																		<SlBasket
-																			size={20}
-																			style={{
-																				cursor: 'pointer',
-																				fil: 'white',
-																			}}
-																		/>{' '}
-																		{t('addBasket')}
-																	</button>
-																</div>
-															)}
-														</div>
-													))
-										  )
-										: //   )
-										  data
-												.filter(
-													(item) =>
-														item.characteristics.type == type &&
-														item.price > minValue &&
-														item.price < maxValue
-												)
-												.sort((a, b) => {
-													if (select == 1) {
-														return a.name.localeCompare(b.name);
-													} else if (select == 2) {
-														return a.price - b.price;
-													} else if (select == 3) {
-														return b.price - a.price;
-													}
-												})
-												.map((product, index) => (
-													<div className='flex flex-col w-[100%] h-[105%] bg-white rounded-lg px-4 pt-2 group'>
-														<Link
-															to={`/productInfo/${product.id}`}
-															onMouseEnter={() => setHoveredItem(index)}
-															onMouseLeave={() => setHoveredItem(null)}
-															// onMouseEnter={() => setScaleUp(true)}
-															// onMouseLeave={() => setScaleUp(false)}
-															// className='flex flex-col w-[300px] h-[500px] bg-white rounded-lg px-4 group relative'
-															key={product.id}>
-															<img
-																alt={product.name}
-																src={product.imageUrl}
-																className='aspect-square w-full rounded-md  object-contain group-hover:opacity-75 lg:aspect-auto lg:h-80'
-															/>
-															<h3 className='text-[14px] font-[500] mb-7 mt-5'>
-																{product.name}
-															</h3>
-															<p className='text-[12px] bg-[#ff003c] mb-4 text-white font-[500] w-[26%] p-1 text-center rounded-md'>
-																{product.price > product.oldPrice
-																	? -(product.price - product.oldPrice).toFixed(
-																			2
-																	  )
-																	: (-(
-																			product.oldPrice - product.price
-																	  )).toFixed(2) + '₼'}
-															</p>
-															<h3 className='text-[#777] font-[500] text-[13px]'>
-																<del>
-																	{product.price > product.oldPrice
-																		? product.price
-																		: product.oldPrice + ' ₼'}
-																</del>
-															</h3>
-															<div className='flex justify-between'>
-																<h3 className='text-[#ff003c] font-[700] text-[16px] '>
-																	{product.price > product.oldPrice
-																		? product.oldPrice
-																		: product.price + ' ₼'}
-																</h3>
-																<p className='font-[600] text-[12px] text-[#323232]'>
-																	0% 12 {t('month')}
-																</p>
-															</div>
-														</Link>
-														{hoveredItem == index && (
-															<div
-																onMouseEnter={() => setHoveredItem(index)}
-																onMouseLeave={() => setHoveredItem(null)}
-																// onMouseEnter={() => setScaleUp(true)}
-																// onMouseLeave={() => setScaleUp(false)}
-																className='flex items-center justify-center gap-3 bg-white pt-5 pb-0
-																 w-[276px] mx-auto'>
-																<div className='bg-[#f3f3f3] p-2 rounded-xl'>
-																	<IoMdHeartEmpty
-																		size={25}
-																		style={{ cursor: 'pointer' }}
-																	/>
-																</div>
-																<div className='bg-[#f3f3f3] p-2 rounded-xl'>
-																	<LiaBalanceScaleSolid
-																		size={25}
-																		style={{ cursor: 'pointer' }}
-																	/>
-																</div>
-																<button
-																	onClick={() => addBasket(product.id)}
-																	className='flex gap-4 text-white bg-[#ff003c] p-3 justify-center items-center text-center rounded-xl font-[550] text-[12px]'>
-																	<SlBasket
-																		size={20}
-																		style={{ cursor: 'pointer', fil: 'white' }}
-																	/>{' '}
-																	{t('addBasket')}
-																</button>
-															</div>
-														)}
+									{data
+										.filter((item) => {
+											if (selectedBrands.length > 0) {
+												return (
+													selectedBrands.includes(item.brand) &&
+													item.characteristics.type === type &&
+													item.price > minValue &&
+													item.price < maxValue
+												);
+											}
+											return (
+												item.characteristics.type === type &&
+												item.price > minValue &&
+												item.price < maxValue
+											);
+										})
+										.sort((a, b) => {
+											if (select == 1) {
+												return a.name.localeCompare(b.name);
+											} else if (select == 2) {
+												return Number(a.price) - Number(b.price);
+											} else if (select == 3) {
+												return Number(b.price) - Number(a.price);
+											}
+											return 0;
+										})
+										.map((product, index) => (
+											<div className='flex flex-col w-[100%] h-[105%] bg-white rounded-lg px-4 pt-2 group'>
+												<Link
+													to={`/productInfo/${product.id}`}
+													onMouseEnter={() => setHoveredItem(index)}
+													onMouseLeave={() => setHoveredItem(null)}
+													key={product.id}>
+													<img
+														alt={product.name}
+														src={product.imageUrl}
+														className='aspect-square w-full rounded-md object-contain group-hover:opacity-75 lg:aspect-auto lg:h-80'
+													/>
+													<h3 className='text-[14px] font-[500] mb-7 mt-5'>
+														{product.name}
+													</h3>
+													<p className='text-[12px] bg-[#ff003c] mb-4 text-white font-[500] w-[26%] p-1 text-center rounded-md'>
+														{product.price > product.oldPrice
+															? -(product.price - product.oldPrice).toFixed(2)
+															: (-(product.oldPrice - product.price)).toFixed(
+																	2
+															  ) + '₼'}
+													</p>
+													<h3 className='text-[#777] font-[500] text-[13px]'>
+														<del>
+															{product.price > product.oldPrice
+																? product.price
+																: product.oldPrice + ' ₼'}
+														</del>
+													</h3>
+													<div className='flex justify-between'>
+														<h3 className='text-[#ff003c] font-[700] text-[16px]'>
+															{product.price > product.oldPrice
+																? product.oldPrice
+																: product.price + ' ₼'}
+														</h3>
+														<p className='font-[600] text-[12px] text-[#323232]'>
+															0% 12 {t('month')}
+														</p>
 													</div>
-												))}
+												</Link>
+												{hoveredItem === index && (
+													<div
+														onMouseEnter={() => setHoveredItem(index)}
+														onMouseLeave={() => setHoveredItem(null)}
+														className='flex items-center justify-center gap-3 bg-white pt-5 pb-0 w-[276px] mx-auto'>
+														<div className='bg-[#f3f3f3] p-2 rounded-xl'>
+															<IoMdHeartEmpty
+																size={25}
+																style={{ cursor: 'pointer' }}
+															/>
+														</div>
+														<div className='bg-[#f3f3f3] p-2 rounded-xl'>
+															<LiaBalanceScaleSolid
+																size={25}
+																style={{ cursor: 'pointer' }}
+															/>
+														</div>
+														<button
+															onClick={() => addBasket(product.id)}
+															className='flex gap-4 text-white bg-[#ff003c] p-3 justify-center items-center text-center rounded-xl font-[550] text-[12px]'>
+															<SlBasket
+																size={20}
+																style={{ cursor: 'pointer', fill: 'white' }}
+															/>
+															{t('addBasket')}
+														</button>
+													</div>
+												)}
+											</div>
+										))}
 								</div>
 							</div>
 						</div>
