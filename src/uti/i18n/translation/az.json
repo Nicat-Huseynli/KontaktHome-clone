@@ -107,5 +107,9 @@
     "totalAmount": "Ümumi Məbləğ",
     "finalAmount": "Yekun Məbləğ",
     "discount": "Endirim",
-    "confirmOrder": "Sifarişi rəsmiləşdir"
+    "confirmOrder": "Sifarişi rəsmiləşdir",
+
+    "//Error": "Error Page",
+    "notFoundInfo": "Sorğunuza əsasən məlumat tapılmadı.",
+    "notFoundProblem": "Axtarış ifadəsini daha dəqiq göstərməyə çalışın."
 }

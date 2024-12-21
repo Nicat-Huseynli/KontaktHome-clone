@@ -104,5 +104,9 @@
     "totalAmount": "Общая сумма",
     "finalAmount": "Итоговая сумма",
     "discount": "Скидка",
-    "confirmOrder": "Подтвердить заказ"
+    "confirmOrder": "Подтвердить заказ",
+
+    "//Error": "Error Page",
+    "notFoundInfo": "По вашему запросу информация не найдена.",
+    "notFoundProblem": "Попробуйте уточнить поисковый запрос."
 }

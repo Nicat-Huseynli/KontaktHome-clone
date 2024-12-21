@@ -1766,6 +1766,12 @@
       "email": "morgan@gmail.com",
       "pwd": "666666",
       "id": 10
+    },
+    {
+      "userName": "Nicat Huseynli",
+      "email": "huseynlinicat@gmail.com",
+      "pwd": "nicat1234",
+      "id": 11
     }
   ],
   "basket": [
@@ -1867,6 +1873,33 @@
       "prodOldPrice": 149,
       "prodImg": "https://kontakt.az/media/catalog/product/cache/7879779a33419e181769bd71b84a871f/0/0/0048019_1.jpg",
       "id": 18
+    },
+    {
+      "userId": 11,
+      "prodId": 10,
+      "prodName": "Smartwatch Strap (Leather)",
+      "prodPrice": 29.99,
+      "prodOldPrice": 39.99,
+      "prodImg": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/n/e/new_project_-_2023-01-13t225336.030.png",
+      "id": 24
+    },
+    {
+      "userId": 11,
+      "prodId": 8,
+      "prodName": "Phone Case for iPhone 14",
+      "prodPrice": 19.99,
+      "prodOldPrice": 29.99,
+      "prodImg": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/c/1/c1.png",
+      "id": 25
+    },
+    {
+      "userId": 11,
+      "prodId": 9,
+      "prodName": "Portable Power Bank",
+      "prodPrice": 39.99,
+      "prodOldPrice": 49.99,
+      "prodImg": "https://kontakt.az/media/catalog/product/cache/a252e3db3d11365dd1457895056a5f34/_/5/_57__10.png",
+      "id": 27
     }
   ],
   "featured": [

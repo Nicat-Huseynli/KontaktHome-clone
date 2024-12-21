@@ -107,6 +107,10 @@
     "totalAmount": "Total Amount",
     "finalAmount": "Final amount",
     "discount": "Discount",
-    "confirmOrder": "Confirm order"
+    "confirmOrder": "Confirm order",
+
+    "//Error": "Error Page",
+    "notFoundInfo": "No information was found based on your request.",
+    "notFoundProblem": "Try to specify your search term more precisely."
 }
   

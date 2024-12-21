@@ -26,6 +26,7 @@ function Header() {
 
 	const Navigate = useNavigate();
 	// Language Dropdown
+	const currLang = localStorage.getItem('i18nextLng');
 	const [showLang, setShowLang] = useState(false);
 	const wrapperRef = useRef(null);
 
@@ -164,8 +165,7 @@ function Header() {
 						<select
 							onChange={(e) => changeLanguage(e.target.value)}
 							className='outline-none px-2'
-							name=''
-							id=''>
+							value={currLang}>
 							<option value='az'>Az</option>
 							<option value='en'>En</option>
 							<option value='ru'>Ru</option>
@@ -312,7 +312,6 @@ function Header() {
 			{showAccount && (
 				<LoginSidebar openAccount={openAccount} showAccount={showAccount} />
 			)}
-
 		</div>
 	);
 }

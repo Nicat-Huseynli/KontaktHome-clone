@@ -91,7 +91,7 @@ function Basket() {
 					</div>
 				</div>
 			)}
-			<div className=' md:px-12 sm:px-5 max-sm:px-5 py-4'>
+			<div className='md:px-12 sm:px-2 max-sm:px-2 py-4 '>
 				{/* <div> */}
 				<div className=' bg-white p-4'>
 					<p className='font-[500] text-[16px]'>
@@ -101,7 +101,7 @@ function Basket() {
 					</p>
 				</div>
 
-				<div className='mt-3'>
+				<div className='mt-3 text-center'>
 					{userId ? (
 						basketData?.filter((basket) => basket.userId === userId).length >
 						0 ? (
