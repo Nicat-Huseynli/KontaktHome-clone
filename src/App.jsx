@@ -10,8 +10,6 @@ import AboutCompany from './components/footer-links/AboutCompany';
 import DeliveryPayment from './components/delivery and payment/DeliveryPayment';
 import GuaranteeBestPrice from './components/guaranteeForBestPrice/GuaranteeBestPrice';
 import Telefoniya from './components/telefoniya/Telefoniya';
-// import Smartphones from './components/smartphones/Smartphones';
-// import SidebarFilters from './components/sidebar-filtres/sidebarFilters';
 import ProductInfo from './components/Product-Info/ProductInfo';
 import Products from './components/products/Products';
 import Register from './components/login-sidebar/Register';
@@ -34,7 +32,6 @@ function App() {
 					<Route path='/guarantee-best-price' element={<GuaranteeBestPrice/>} />
 
 					<Route path='/telefoniya/:id' element={<Telefoniya/>}/>
-					{/* <Route path='/smartphone' element={<Smartphones/>}/> */}
 					<Route path='/telefoniya/type/:type' element={<Products/>} />
 					<Route path='/productInfo/:id' element={<ProductInfo/>}/>
 					<Route path='/register' element={<Register/>}/>

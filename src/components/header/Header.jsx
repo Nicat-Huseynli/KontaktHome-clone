@@ -20,8 +20,7 @@ function Header() {
 	const { t, i18n } = useTranslation();
 
 	const changeLanguage = (lang) => {
-		// localStorage.setItem("lang", lang);
-		i18n.changeLanguage(lang); // Switch language
+		i18n.changeLanguage(lang); 
 	};
 
 	const Navigate = useNavigate();
@@ -58,7 +57,6 @@ function Header() {
 	// Open Category
 	const [showCategory, setShowCategory] = useState(false);
 
-	// const openCategory = () => setShowCategory(!showCategory);
 
 	// Open Acconut
 	const [showAccount, setShowAccount] = useState(false);
@@ -104,7 +102,6 @@ function Header() {
 		setInputText('');
 	};
 
-	// document.title = `Kontak Home: Home | page`;
 	return (
 		<div className='relative'>
 			<div>

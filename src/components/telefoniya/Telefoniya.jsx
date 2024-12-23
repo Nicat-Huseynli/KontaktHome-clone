@@ -154,8 +154,6 @@ function Telefoniya() {
 										<div
 											onMouseEnter={() => setHoveredItem(index)}
 											onMouseLeave={() => setHoveredItem(null)}
-											// onMouseEnter={() => setScaleUp(true)}
-											// onMouseLeave={() => setScaleUp(false)}
 											className='flex flex-col w-[300px] h-[350px] bg-white pb-6 rounded-lg px-4'>
 											<img
 												className='w-[55%] m-auto'
@@ -193,8 +191,6 @@ function Telefoniya() {
 										<div
 											onMouseEnter={() => setHoveredItem(index)}
 											onMouseLeave={() => setHoveredItem(null)}
-											// onMouseEnter={() => setScaleUp(true)}
-											// onMouseLeave={() => setScaleUp(false)}
 											className='flex items-center justify-center gap-3 bg-white mt-[-7px] pt-8 pb-6'>
 											<div className='bg-[#f3f3f3] p-2 rounded-xl'>
 												<IoMdHeartEmpty

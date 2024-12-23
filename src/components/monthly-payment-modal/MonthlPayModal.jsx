@@ -17,7 +17,6 @@ function MonthlPayModal({showPaymentModal}) {
     const closePaymentModalRef = useRef(null)
 
 
-    // const closePaymentModal = () => setPaymentModalOpen(!paymentModalOpen)
 
     function handleClosePaymentModal(e){
         if(closePaymentModalRef.current && !closePaymentModalRef.current.contains(e.target)){
@@ -33,7 +32,6 @@ function MonthlPayModal({showPaymentModal}) {
         }
     },[])
 
-    // window.addEventListener('mousedown', setPaymentModalOpen(false))
 
 	return (
 		<Dialog open={paymentModalOpen} onClose={setPaymentModalOpen} className='relative z-10'>

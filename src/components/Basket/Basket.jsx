@@ -52,7 +52,6 @@ function Basket() {
 	};
 
 	// Count of product
-	// State to track product counts
 	const [productCounts, setProductCounts] = useState({});
 
 	// Initialize the count for a product if not already set
@@ -92,7 +91,6 @@ function Basket() {
 				</div>
 			)}
 			<div className='md:px-12 sm:px-2 max-sm:px-2 py-4 '>
-				{/* <div> */}
 				<div className=' bg-white p-4'>
 					<p className='font-[500] text-[16px]'>
 						{t('cart')} ({' '}
@@ -128,7 +126,6 @@ function Basket() {
 
 												<div className='flex gap-4'>
 													<div className='flex items-center gap-3 text-[#777]'>
-														{/* Initialize count if not already done */}
 														{initializeCount(basket.id)}
 
 														<FiMinusCircle
@@ -222,9 +219,6 @@ function Basket() {
 																	const count = productCounts[item.id] || 1;
 																	return (acc + item.prodOldPrice) * count;
 																}, 0) -
-															// (acc, item) => acc + item.prodOldPrice,
-															// 0
-															// )
 															basketData
 																?.filter((basket) => basket.userId === userId)
 																.reduce((acc, item) => {
@@ -302,7 +296,6 @@ function Basket() {
 						</div>
 					)}
 				</div>
-				{/* </div> */}
 				{paymentModal && <BuyOneClick openPaymentModal={openPaymentModal} />}
 			</div>
 		</div>

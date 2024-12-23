@@ -86,8 +86,6 @@ function LoginSidebar({
 		}
 	};
 
-	// const [showRegister, setShowRegister] = useState(false)
-
 	const register = () => {
 		Navigate('/register');
 		setOpen(false);
@@ -221,7 +219,6 @@ function LoginSidebar({
 												</label>
 
 												<input
-													// required
 													onChange={getPassword}
 													type={showPassword ? 'text' : 'password'}
 													id='password'

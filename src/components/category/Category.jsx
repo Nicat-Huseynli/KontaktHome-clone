@@ -2,29 +2,13 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { SlArrowRight } from 'react-icons/sl';
-
-import beauty from '../../assets/images/category-icons/beauty.svg';
-import furniture from '../../assets/images/category-icons/furniture.svg';
-import gamer from '../../assets/images/category-icons/gamer.svg';
-import hobby from '../../assets/images/category-icons/hobby.svg';
-import homeElectronic from '../../assets/images/category-icons/home-electronic.svg';
-import kitchen from '../../assets/images/category-icons/kitchen.svg';
-import notebook from '../../assets/images/category-icons/notebook.svg';
-import phone from '../../assets/images/category-icons/phone.svg';
-import tvAudio from '../../assets/images/category-icons/tv-audio.svg';
-import watch from '../../assets/images/category-icons/watch.svg';
 import { useTranslation } from 'react-i18next';
 
 function Category({ showCategory }) {
 	const { t, i18n } = useTranslation();
 
-	// const changeLanguage = (lang) => {
-	// 	// localStorage.setItem("lang", lang);
-	// 	i18n.changeLanguage(lang); // Switch language
-	// };
 
 	const [loading, setLoading] = useState(true);
-	// const [data, setData] = useState([]);
 	const [categories, setCategories] = useState([]);
 
 	useEffect(() => {
@@ -150,13 +134,6 @@ function Category({ showCategory }) {
 		}
 	};
 
-	// Type of products
-	// const [typeOfProducts, setTypeOfProducts] = useState([])
-
-	// useEffect(() => {
-	// 	axios.get()
-	// })
-
 	const refreshPage = () => {
 		location.reload();
 	};
@@ -179,8 +156,8 @@ function Category({ showCategory }) {
 					</div>
 				</div>
 			)}
-			<aside className='bg-white flex w-[300px] h-[85vh] p-5 rounded-lg'>
-				<ul className='flex flex-col w-[100%] gap-4 '>
+			<aside className='bg-white flex w-[300px] h-[85vh] rounded-lg me-0'>
+				<ul className='flex flex-col w-[100%] gap-4 pt-5'>
 					{categories.map((category) => {
 						return (
 							<li onClick={refreshPage}>
@@ -190,7 +167,7 @@ function Category({ showCategory }) {
 										openCategory(translateToAze(category.name))
 									}
 									onMouseLeave={() => setShowCategories(false)}
-									className='flex items-center gap-3 text-[#323232] lg:text-[14px] md:text-[12px] font-[500] group hover:text-[#ff003c]'>
+									className='px-5 flex items-center gap-3 text-[#323232] lg:text-[14px] md:text-[12px] font-[500] group hover:text-[#ff003c]'>
 									<img src={category.imageUrl} alt={category.name} />
 									<p className=' group-hover:text-[#ff003c]'>
 										{pageLang == 'en'
@@ -210,7 +187,7 @@ function Category({ showCategory }) {
 				<div
 					onMouseEnter={() => setShowCategories(true)}
 					onMouseLeave={() => setShowCategories(false)}
-					className='p-5 bg-white absolute top-[149px] lg:left-[310px] md:left-[200px] z-[7000] h-[85vh] w-[77%]'>
+					className='p-5 ms-0 bg-white absolute top-[149px] lg:left-[310px] md:left-[200px] z-[7000] h-[85vh] w-[77%]'>
 					<p>
 						{categories.map((category) => {
 							if (translateToEng(selectedCategory) === category.name) {

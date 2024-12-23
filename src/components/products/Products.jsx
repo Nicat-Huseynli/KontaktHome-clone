@@ -6,10 +6,8 @@ import { XMarkIcon } from '@heroicons/react/24/outline';
 import { SlBasket } from 'react-icons/sl';
 import { LiaBalanceScaleSolid } from 'react-icons/lia';
 import { IoMdHeartEmpty } from 'react-icons/io';
-// import Filters from '../sidebar-filtres/Filters';
 import { VscSettings } from 'react-icons/vsc';
 import { FaPlus, FaMinus } from 'react-icons/fa6';
-// import DoubleRangeSlider from '../price-range/DoubleRangeSlider';
 import MultiRangeSlider from 'multi-range-slider-react';
 
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
@@ -85,7 +83,6 @@ function Products() {
 	console.log(selectedBrands);
 
 	console.log(selectedBrands.map((brand) => brand));
-	// console.log(selectedBrands.map((brand) => console.log(brand)));
 
 	console.log(select);
 
@@ -97,22 +94,6 @@ function Products() {
 		set_minValue(e.minValue);
 		set_maxValue(e.maxValue);
 	};
-
-	// const [minVal, setMinVal] = useState(0);
-	// const [maxVal, setMaxVal] = useState(3000);
-
-	// const min = 0;
-	// const max = 5000;
-
-	// const handleMinChange = (e) => {
-	// 	const value = Math.min(Number(e.target.value), maxVal - 1);
-	// 	setMinVal(value);
-	// };
-
-	// const handleMaxChange = (e) => {
-	// 	const value = Math.max(Number(e.target.value), minVal + 1);
-	// 	setMaxVal(value);
-	// };
 
 	const [basketOpenLoginSidebar, setBasketOpenLoginSidebar] = useState(false);
 	const closeLoginSidebar = () => {
@@ -189,7 +170,6 @@ function Products() {
 				</div>
 
 				<div className='flex justify-between sm:flex-col lg:flex-row'>
-					{/* <Filters type={type} /> */}
 
 					{showFilter && (
 						<div className='absolute scroll-none z-50 w-[91%] top-22 bg-white rounded-lg mt-6 xl:hidden sm:block'>
@@ -339,17 +319,6 @@ function Products() {
 									</div>
 								)}
 							</div>
-
-							{/* <div className='category border-solid border-y-[1px] border-gray-200 p-5'>
-							<div className='flex justify-between'>
-								<h4>Reytinq</h4>
-								<FaPlus />
-								<FaMinus />
-							</div>
-							<div className='flex flex-col gap-3 mt-4'>
-								2+
-							</div>
-						</div> */}
 						</div>
 					)}
 
@@ -493,17 +462,6 @@ function Products() {
 								</div>
 							)}
 						</div>
-
-						{/* <div className='category border-solid border-y-[1px] border-gray-200 p-5'>
-							<div className='flex justify-between'>
-								<h4>Reytinq</h4>
-								<FaPlus />
-								<FaMinus />
-							</div>
-							<div className='flex flex-col gap-3 mt-4'>
-								2+
-							</div>
-						</div> */}
 					</div>
 
 					<div className='w-[100%] mx-auto lg:col-span-3'>

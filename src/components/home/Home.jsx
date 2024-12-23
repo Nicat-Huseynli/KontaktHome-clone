@@ -40,11 +40,6 @@ function Home() {
 	document.title = `Kontak Home: Home`;
 	const { t, i18n } = useTranslation();
 
-	// const changeLanguage = (lang) => {
-	// 	// localStorage.setItem("lang", lang);
-	// 	i18n.changeLanguage(lang); // Switch language
-	// };
-
 	// Carousel
 	const responsive = {
 		desktop: {
@@ -229,8 +224,6 @@ function Home() {
 
 	return (
 		<div>
-
-
 			{loading && (
 				<div className='flex items-center justify-center h-screen'>
 					<div
@@ -569,10 +562,6 @@ function Home() {
 												/>{' '}
 												{t('addBasket')}
 											</button>
-
-											{/* <Link className='flex items-center sm:text-[14px] max-sm:text-[12px] justify-center mt-3 w-[100%] hover:underline '>
-												Bütün təklifləri gör
-											</Link> */}
 										</div>
 									</div>
 								);
@@ -622,8 +611,6 @@ function Home() {
 									<div
 										onMouseEnter={() => setHoveredItem(index)}
 										onMouseLeave={() => setHoveredItem(null)}
-										// onMouseEnter={() => setScaleUp(true)}
-										// onMouseLeave={() => setScaleUp(false)}
 										className='flex flex-col w-[300px] h-[350px] bg-white pb-6 rounded-lg px-4'>
 										<img
 											className='w-[55%] m-auto'
@@ -659,8 +646,6 @@ function Home() {
 									<div
 										onMouseEnter={() => setHoveredItem(index)}
 										onMouseLeave={() => setHoveredItem(null)}
-										// onMouseEnter={() => setScaleUp(true)}
-										// onMouseLeave={() => setScaleUp(false)}
 										className='flex items-center justify-center gap-3 bg-white mt-[-7px] pt-8 pb-6 '>
 										<div className='bg-[#f3f3f3] p-2 rounded-xl'>
 											<IoMdHeartEmpty size={25} style={{ cursor: 'pointer' }} />
@@ -743,8 +728,6 @@ function Home() {
 										<div
 											onMouseEnter={() => setHoveredDailyItem(index)}
 											onMouseLeave={() => setHoveredDailyItem(null)}
-											// onMouseEnter={() => setScaleUp(true)}
-											// onMouseLeave={() => setScaleUp(false)}
 											className='flex items-center justify-center gap-3 bg-white mt-[-7px] pt-8 pb-6'>
 											<div className='bg-[#f3f3f3] p-2 rounded-xl'>
 												<IoMdHeartEmpty

@@ -107,9 +107,6 @@ function ProductInfo() {
 								<FaStar className='fill-yellow-400' />
 								<p className='text-[14px] font-[#323232]'>{data.rating}</p>
 							</div>
-							<div className='comments border-solid border-[1.5px] rounded-full p-[5px] border-gray-200'>
-								<p className='text-[14px] font-[#323232]'>Comments</p>
-							</div>
 						</div>
 						<div className='basket p-4 sm:p-5 w-full border-b border-gray-200 border-solid'>
 							<p className='bg-[#FF003C] text-[#FFF] font-[550] p-1 w-[50%] sm:w-[12%] max-sm:w-[25%] rounded-md text-[14px] sm:text-[16px]'>
